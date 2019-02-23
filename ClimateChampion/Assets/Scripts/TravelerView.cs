@@ -5,6 +5,8 @@ namespace FineGameDesign.Utils
 {
     public sealed class TravelerView : MonoBehaviour
     {
+        public event Action<TravelerData> OnPositionChanged;
+
         [SerializeField]
         private TravelerData m_Data;
 

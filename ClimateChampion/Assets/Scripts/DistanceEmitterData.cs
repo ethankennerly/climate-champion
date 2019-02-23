@@ -7,6 +7,7 @@ namespace FineGameDesign.Utils
     {
         public ItemType emissionType;
         public float rateOverDistance;
-        public float remaining;
+        public float remainingDistance;
+        public TravelerData traveler;
     }
 }

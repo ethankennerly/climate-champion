@@ -37,9 +37,6 @@ namespace FineGameDesign.Utils
             m_Travelers.Remove(traveler);
         }
 
-        /// <summary>
-        /// Reassigns struct to array. Otherwise would not be updated.
-        /// </summary>
         public void Update(float deltaTime)
         {
             if (deltaTime == 0f)
