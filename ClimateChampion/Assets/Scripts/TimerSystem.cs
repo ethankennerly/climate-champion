@@ -9,6 +9,17 @@ namespace FineGameDesign.Utils
 
         private readonly List<TimerData> m_Timers = new List<TimerData>();
 
+        public TimerSystem()
+        {
+            DeltaTimeSystem.OnDeltaTime -= Update;
+            DeltaTimeSystem.OnDeltaTime += Update;
+        }
+
+        ~TimerSystem()
+        {
+            DeltaTimeSystem.OnDeltaTime -= Update;
+        }
+
         public void OnEnable(TimerData timer)
         {
             if (m_Timers.Contains(timer))
