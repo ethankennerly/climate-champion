@@ -50,8 +50,9 @@ namespace FineGameDesign.Utils
                 if (traveler.speed == 0f)
                     continue;
 
+                traveler.deltaDistance = traveler.speed * deltaTime;
                 Vector2 direction = Vector2Utils.DegreeToVector2(traveler.rotation);
-                traveler.position += direction * (traveler.speed * deltaTime);
+                traveler.position += direction * traveler.deltaDistance;
 
                 if (OnPositionChanged != null)
                     OnPositionChanged(traveler);

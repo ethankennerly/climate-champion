@@ -9,5 +9,6 @@ namespace FineGameDesign.Utils
         public float rotation;
         public float speed;
         public Vector2 position;
+        public float deltaDistance;
     }
 }
