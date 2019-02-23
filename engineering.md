@@ -1,8 +1,15 @@
+# Features
+
+- Delta Time System
+- Text Timer View
+
 # TODO
 
-- Emitter
+- Distance Emitter
     - Type
     - Rate Over Distance
+- Timed Emitter
+    - Type
     - Rate Over Time
 - Traveler
     - Heading
@@ -10,5 +17,3 @@
     - Position
 - Nav Grid
 
-- Delta Time System
-- Timer View
