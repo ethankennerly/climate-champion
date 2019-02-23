@@ -28,6 +28,7 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. [ ] HUD.
     1. [ ] Year 2000.
     1. [ ] After tap start, each second or two, year increments.
+    1. [ ] CO2 meter.
 1. [ ] Vehicle moves horizontally on a schedule, returning to it's start location:
     1. [ ] Airplane: Fast and travels many laps.
     1. [ ] Car

@@ -271,6 +271,8 @@ GameObject:
   - component: {fileID: 3261756751944185355}
   - component: {fileID: 4025311858499508736}
   - component: {fileID: 7025050499326161215}
+  - component: {fileID: 142812927496282191}
+  - component: {fileID: 3461702441957289700}
   m_Layer: 5
   m_Name: YearText
   m_TagString: Untagged
@@ -420,3 +422,32 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &142812927496282191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446412904254237486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d483df277e17b7546b3762be8f7910cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Data:
+    whole: 2000
+    remainder: 0
+    speed: 1
+  m_Text: {fileID: 7025050499326161215}
+--- !u!114 &3461702441957289700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446412904254237486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086f9115d060229439f4651b1a81127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
