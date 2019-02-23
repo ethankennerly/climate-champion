@@ -2,6 +2,7 @@
 
 - Delta Time System
 - Text Timer View
+- Traveler
 
 # TODO
 
@@ -11,9 +12,5 @@
 - Timed Emitter
     - Type
     - Rate Over Time
-- Traveler
-    - Heading
-    - Speed
-    - Position
 - Nav Grid
 

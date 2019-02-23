@@ -30,11 +30,12 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. After tap start, each second or two, year increments.
     1. [ ] CO2 meter.
 1. [ ] Vehicle moves horizontally on a schedule, returning to it's start location:
+    1. Vehicle moves forward.
+    1. [ ] Each unit of distance traveled by vehicle, emit CO2.
     1. [ ] Airplane: Fast and travels many laps.
     1. [ ] Car
     1. [ ] Train
     1. [ ] Bicycle: No CO2.
-    1. [ ] Each unit of distance traveled by vehicle, emit CO2.
 1. [ ] Emit CO2: Gray cloud rises up.
     1. [ ] After rising up, CO2 meter increases.
         1. [ ] If CO2 meter reaches max:
