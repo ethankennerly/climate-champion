@@ -12,11 +12,11 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private TMP_Text m_Text;
 
-        private Action<int> m_OnWholeChanged;
+        private Action<TimerData> m_OnWholeChanged;
 
         private void OnEnable()
         {
-            UpdateText(m_Data.whole);
+            UpdateText(m_Data);
             if (m_OnWholeChanged == null)
                 m_OnWholeChanged = UpdateText;
 
@@ -32,9 +32,12 @@ namespace FineGameDesign.Utils
             TimerSystem.OnWholeChanged -= m_OnWholeChanged;
         }
 
-        private void UpdateText(int whole)
+        private void UpdateText(TimerData timer)
         {
-            m_Text.text = whole.ToString();
+            if (timer != m_Data)
+                return;
+
+            m_Text.text = timer.whole.ToString();
         }
     }
 }

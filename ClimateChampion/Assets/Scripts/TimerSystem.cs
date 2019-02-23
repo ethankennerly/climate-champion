@@ -5,7 +5,7 @@ namespace FineGameDesign.Utils
 {
     public sealed class TimerSystem : ASingleton<TimerSystem>
     {
-        public static event Action<int> OnWholeChanged;
+        public static event Action<TimerData> OnWholeChanged;
 
         private readonly List<TimerData> m_Timers = new List<TimerData>();
 
@@ -41,22 +41,17 @@ namespace FineGameDesign.Utils
         /// </summary>
         public void Update(float deltaTime)
         {
-            for (int index = 0, numTimers = m_Timers.Count; index < numTimers; ++index)
+            foreach (TimerData timer in m_Timers)
             {
-                TimerData timer = m_Timers[index];
                 timer.remainder += timer.speed * deltaTime;
                 if (timer.remainder < 1f)
-                {
-                    m_Timers[index] = timer;
                     continue;
-                }
 
                 int adding = (int)timer.remainder;
                 timer.whole += adding;
                 timer.remainder -= adding;
-                m_Timers[index] = timer;
                 if (OnWholeChanged != null)
-                    OnWholeChanged(timer.whole);
+                    OnWholeChanged(timer);
             }
         }
     }

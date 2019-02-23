@@ -3,7 +3,7 @@ using System;
 namespace FineGameDesign.Utils
 {
     [Serializable]
-    public struct TimerData
+    public class TimerData
     {
         public int whole;
         public float remainder;
