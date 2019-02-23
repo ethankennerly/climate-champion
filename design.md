@@ -21,11 +21,12 @@ Climate Champion simulate and animate choices. Choose. Review:
 ---
 
 1. [ ] Start screen.
-    1. [ ] Climate Champion.
-    1. [ ] How long can you survive?
-    1. [ ] Start button.
-    1. [ ] Year 2000.
+    1. Climate Champion.
+    1. How long can you survive?
+    1. Start button.
     1. [ ] Best year.
+1. [ ] HUD.
+    1. [ ] Year 2000.
 1. [ ] Vehicle moves horizontally on a schedule, returning to it's start location:
     1. [ ] Airplane: Fast and travels many laps.
     1. [ ] Car
