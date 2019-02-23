@@ -3,6 +3,7 @@
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
+Logs/
 Assets/AssetStoreTools*
 /*/[Ll]ibrary/
 /*/[Tt]emp/
@@ -10,6 +11,7 @@ Assets/AssetStoreTools*
 /*/[Bb]uild/
 /*/[Bb]uilds/
 /*/Assets/AssetStoreTools*
+/*/Logs/
 
 # Visual Studio cache directory
 .vs/
