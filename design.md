@@ -70,6 +70,7 @@ Climate Champion simulate and animate choices. Choose. Review:
         1. [ ] Car
         1. [ ] Train
         1. [ ] Bicycle: No CO2.
+    1. [ ] Work also consumes resources like a house.
 1. [ ] Vacation.
     1. [ ] Airplane
     1. [ ] Car
@@ -86,11 +87,12 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. [ ] Reproduction.
     1. [ ] Baby: Creates another house.
     1. [ ] Child free.
+1. [ ] As demand increases, another supplier spawns.
 1. [ ] House power drain.
     1. [ ] Little.
     1. [ ] Lot.
 
-# References
+# Reference carbon footprints
 
 - <http://carbotax.org/>
 - <https://sustainability.stackexchange.com/questions/5883/why-does-cheese-have-such-a-high-carbon-footprint>
@@ -102,6 +104,11 @@ Climate Champion simulate and animate choices. Choose. Review:
 - <https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator>
 - <https://medium.com/@razgo/the-new-culture-war-and-other-lessons-from-globescan-ikea-climate-action-research-report-f2eeeaba1226>
 - <https://ocean.si.edu/conservation/climate-change/climate-change-game-tetris>
+
+# Reference gameplay
+
+- [Me Playing SimCity Classic](https://www.youtube.com/watch?v=OKI2SI9mp8I)
+- [SimCity History - SimCity Classic #2](https://www.youtube.com/watch?v=z8TS_0cDFBw)
 
 # Brainstorm
 
