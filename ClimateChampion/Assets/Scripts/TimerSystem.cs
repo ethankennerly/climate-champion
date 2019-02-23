@@ -5,7 +5,7 @@ namespace FineGameDesign.Utils
 {
     public sealed class TimerSystem : ASingleton<TimerSystem>
     {
-        public static event Action<TimerData> OnWholeChanged;
+        public static event Action<int> OnWholeChanged;
 
         private readonly List<TimerData> m_Timers = new List<TimerData>();
 
@@ -45,7 +45,7 @@ namespace FineGameDesign.Utils
                 timer.remainder -= adding;
                 m_Timers[index] = timer;
                 if (OnWholeChanged != null)
-                    OnWholeChanged(timer);
+                    OnWholeChanged(timer.whole);
             }
         }
     }

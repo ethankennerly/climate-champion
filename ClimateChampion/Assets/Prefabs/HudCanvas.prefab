@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Data:
     whole: 2000
     remainder: 0
-    speed: 1
+    speed: 0.5
   m_Text: {fileID: 7025050499326161215}
 --- !u!114 &3461702441957289700
 MonoBehaviour:
