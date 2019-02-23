@@ -6,7 +6,7 @@ namespace FineGameDesign.Utils
 {
     public sealed class MoveForwardSystem : ASingleton<MoveForwardSystem>
     {
-        public static event Action<Vector2> OnPositionChanged;
+        public static event Action<TravelerData> OnPositionChanged;
 
         private readonly List<TravelerData> m_Travelers = new List<TravelerData>();
 
@@ -45,18 +45,16 @@ namespace FineGameDesign.Utils
             if (deltaTime == 0f)
                 return;
 
-            for (int index = 0, numTravelers = m_Travelers.Count; index < numTravelers; ++index)
+            foreach (TravelerData traveler in m_Travelers)
             {
-                TravelerData traveler = m_Travelers[index];
                 if (traveler.speed == 0f)
                     continue;
 
                 Vector2 direction = Vector2Utils.DegreeToVector2(traveler.rotation);
                 traveler.position += direction * (traveler.speed * deltaTime);
 
-                m_Travelers[index] = traveler;
                 if (OnPositionChanged != null)
-                    OnPositionChanged(traveler.position);
+                    OnPositionChanged(traveler);
             }
         }
     }

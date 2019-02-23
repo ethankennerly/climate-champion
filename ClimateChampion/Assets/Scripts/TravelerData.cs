@@ -4,7 +4,7 @@ using UnityEngine;
 namespace FineGameDesign.Utils
 {
     [Serializable]
-    public struct TravelerData
+    public class TravelerData
     {
         public float rotation;
         public float speed;

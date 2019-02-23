@@ -8,13 +8,13 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private TravelerData m_Data;
 
-        private Action<Vector2> m_OnPositionChanged;
+        private Action<TravelerData> m_OnPositionChanged;
 
         private void OnEnable()
         {
             UpdateRotation(m_Data.rotation);
 
-            UpdatePosition(m_Data.position);
+            UpdatePosition(m_Data);
             if (m_OnPositionChanged == null)
                 m_OnPositionChanged = UpdatePosition;
 
@@ -30,9 +30,12 @@ namespace FineGameDesign.Utils
             MoveForwardSystem.OnPositionChanged -= m_OnPositionChanged;
         }
 
-        private void UpdatePosition(Vector2 position)
+        private void UpdatePosition(TravelerData traveler)
         {
-            transform.position = new Vector3(position.x, position.y, transform.position.z);
+            if (traveler != m_Data)
+                return;
+
+            transform.position = new Vector3(traveler.position.x, traveler.position.y, transform.position.z);
         }
 
         private void UpdateRotation(float degrees)
