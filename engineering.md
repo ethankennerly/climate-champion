@@ -2,7 +2,10 @@
 
 - Emitter
     - Type
-    - Rate
-- Receiver
-    - Type
-    - Quantity
+    - Rate Over Distance
+    - Rate Over Time
+- Traveler
+    - Heading
+    - Speed
+    - Position
+- Nav Grid
