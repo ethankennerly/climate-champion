@@ -33,6 +33,9 @@ namespace FineGameDesign.Utils
 
         public void Spawn(int index)
         {
+            if (m_SelectedIndex == index)
+                return;
+
             m_SelectedIndex = index;
             if (m_SpawnedInstance != null)
                 Destroy(m_SpawnedInstance);

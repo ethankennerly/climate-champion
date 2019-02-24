@@ -43,6 +43,19 @@ namespace FineGameDesign.Utils
                 index++;
             }
         }
+
+        private void Spawn(Toggle selected)
+        {
+            int index = 0;
+            foreach (PrefabToggle toggle in m_Toggles)
+            {
+                if (toggle.Toggle != selected)
+                    continue;
+
+                m_SpawnSite.Spawn(index);
+                index++;
+            }
+        }
     }
 }
 
