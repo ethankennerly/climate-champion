@@ -14,6 +14,8 @@ namespace FineGameDesign.Utils
 
         private void OnEnable()
         {
+            m_Data.position = transform.position;
+
             UpdateRotation(m_Data.rotation);
 
             UpdatePosition(m_Data);
@@ -38,6 +40,8 @@ namespace FineGameDesign.Utils
                 return;
 
             transform.position = new Vector3(traveler.position.x, traveler.position.y, transform.position.z);
+            if (OnPositionChanged != null)
+                OnPositionChanged(traveler);
         }
 
         private void UpdateRotation(float degrees)

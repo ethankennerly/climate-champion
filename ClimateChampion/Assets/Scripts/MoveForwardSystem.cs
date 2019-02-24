@@ -9,6 +9,8 @@ namespace FineGameDesign.Utils
         public static event Action<TravelerData> OnPositionChanged;
 
         private readonly List<TravelerData> m_Travelers = new List<TravelerData>();
+        private readonly List<TravelerData> m_AddTravelers = new List<TravelerData>();
+        private readonly List<TravelerData> m_RemoveTravelers = new List<TravelerData>();
 
         public MoveForwardSystem()
         {
@@ -26,7 +28,13 @@ namespace FineGameDesign.Utils
             if (m_Travelers.Contains(traveler))
                 return;
 
-            m_Travelers.Add(traveler);
+            if (m_RemoveTravelers.Contains(traveler))
+                m_RemoveTravelers.Remove(traveler);
+
+            if (m_AddTravelers.Contains(traveler))
+                return;
+
+            m_AddTravelers.Add(traveler);
         }
 
         public void OnDisable(TravelerData traveler)
@@ -34,13 +42,26 @@ namespace FineGameDesign.Utils
             if (!m_Travelers.Contains(traveler))
                 return;
 
-            m_Travelers.Remove(traveler);
+            if (m_AddTravelers.Contains(traveler))
+                m_AddTravelers.Remove(traveler);
+
+            if (m_RemoveTravelers.Contains(traveler))
+                return;
+
+            m_RemoveTravelers.Remove(traveler);
         }
 
         public void Update(float deltaTime)
         {
             if (deltaTime == 0f)
                 return;
+
+            foreach (TravelerData traveler in m_AddTravelers)
+                m_Travelers.Add(traveler);
+            m_AddTravelers.Clear();
+            foreach (TravelerData traveler in m_RemoveTravelers)
+                m_Travelers.Remove(traveler);
+            m_RemoveTravelers.Clear();
 
             foreach (TravelerData traveler in m_Travelers)
             {

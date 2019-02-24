@@ -7,3 +7,4 @@ Artwork made by others have their own licenses.
 - <https://opengameart.org/content/isometric-road-tiles>
 - <https://opengameart.org/content/simerion-tiles-and-images>
 - <https://github.com/ethankennerly/powerplant>
+- <https://opengameart.org/content/lightning-cloud>

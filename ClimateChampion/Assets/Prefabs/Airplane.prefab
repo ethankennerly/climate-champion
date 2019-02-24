@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7367758315309337203}
   - component: {fileID: 1151775491921859904}
+  - component: {fileID: 5924818741395541744}
   m_Layer: 0
   m_Name: Airplane
   m_TagString: Untagged
@@ -127,3 +128,20 @@ MonoBehaviour:
     rotation: 180
     speed: 4
     position: {x: 2, y: 1}
+    deltaDistance: 0
+--- !u!114 &5924818741395541744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5490390011349796546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9630b47ce0421947ba00420f7c10a95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Data:
+    emissionType: 1
+    rateOverDistance: 1
+    remainingDistance: 0

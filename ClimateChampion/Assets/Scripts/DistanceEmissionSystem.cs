@@ -20,16 +20,16 @@ namespace FineGameDesign.Utils
         /// <summary>
         /// Max one emission per update.
         /// </summary>
-        public void UpdateEmission(DistanceEmitterData emitter, TravelerData traveler)
+        private void UpdateEmission(DistanceEmitterData emitter, TravelerData traveler)
         {
             if (emitter.emissionType == ItemType.Unknown)
                 return;
 
             emitter.remainingDistance += traveler.deltaDistance;
-            if (emitter.rateOverDistance < emitter.remainingDistance)
+            if (emitter.rateOverDistance > emitter.remainingDistance)
                 return;
 
-            emitter.rateOverDistance -= emitter.remainingDistance;
+            emitter.remainingDistance -= emitter.rateOverDistance;
 
             if (OnEmitted != null)
                 OnEmitted(traveler, emitter.emissionType);

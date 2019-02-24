@@ -31,21 +31,19 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] CO2 meter.
 1. [ ] Vehicle moves horizontally on a schedule, returning to it's start location:
     1. Vehicle moves forward.
-    1. [ ] Each unit of distance traveled by vehicle, emit CO2.
+    1. Each unit of distance traveled by vehicle, emit CO2.
     1. [ ] Airplane: Fast and travels many laps.
     1. [ ] Car
     1. [ ] Train
     1. [ ] Bicycle: No CO2.
-1. [ ] Emit CO2: Gray cloud rises up.
+1. [ ] Emit CO2:
+    1. Gray cloud rises up.
     1. [ ] After rising up, CO2 meter increases.
         1. [ ] If CO2 meter reaches max:
             1. [ ] Game ends.
                 1. [ ] Prompt: How long can you survive?
                 1. [ ] Current year.
                 1. [ ] Restart button.
-1. [ ] Year counter.
-    1. [ ] Starts at 2000.
-    1. [ ] Increases each two seconds.
 1. [ ] Clicking replacable item, shows toggle group.
     1. [ ] Click is mouse down and up in the click area.
 1. [ ] Toggle group. Touch one.
