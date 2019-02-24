@@ -30,5 +30,17 @@ namespace FineGameDesign.Utils
         {
             m_Group.Open(this);
         }
+
+        public void Spawn(int index)
+        {
+            m_SelectedIndex = index;
+            if (m_SpawnedInstance != null)
+                Destroy(m_SpawnedInstance);
+            GameObject nextSpawn = index >= m_OptionsToSpawn.Length ? null : m_OptionsToSpawn[index];
+            if (nextSpawn == null)
+                return;
+
+            Instantiate(nextSpawn, transform);
+        }
     }
 }
