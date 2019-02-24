@@ -10,3 +10,5 @@ Artwork made by others have their own licenses.
 - <https://opengameart.org/content/isometric-vehicles-1>
 - <https://opengameart.org/content/racing-pack>
 - <https://github.com/ethankennerly/powerplant>
+- <https://opengameart.org/content/2d-car-pack-0>
+
