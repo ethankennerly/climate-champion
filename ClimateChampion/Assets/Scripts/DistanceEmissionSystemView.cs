@@ -43,7 +43,6 @@ namespace FineGameDesign.Utils
                         Quaternion.identity
                     );
                 }
-
             }
         }
     }
