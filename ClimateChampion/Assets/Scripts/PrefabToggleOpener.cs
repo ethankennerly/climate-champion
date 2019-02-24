@@ -10,9 +10,18 @@ namespace FineGameDesign.Utils
 
         [SerializeField]
         private GameObject[] m_OptionsToSpawn;
+        public GameObject[] OptionsToSpawn
+        {
+            get { return m_OptionsToSpawn; }
+        }
 
         [SerializeField]
         private int m_SelectedIndex;
+        public int SelectedIndex
+        {
+            get { return m_SelectedIndex; }
+            set { m_SelectedIndex = value; }
+        }
 
         [SerializeField]
         private PrefabToggleGroup m_Group;
