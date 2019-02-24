@@ -3,15 +3,6 @@ using UnityEngine;
 
 namespace FineGameDesign.Utils
 {
-    /// <summary>
-    /// - Prefab Toggle Opener
-    ///     - Spawned instance
-    ///     - List of prefabs
-    ///     - Selected index
-    /// - Prefab Toggle Group
-    ///     - Prefab Toggle Opener
-    ///     - Toggles
-    /// </summary>
     public sealed class PrefabToggleOpener : MonoBehaviour
     {
         [SerializeField]
@@ -23,12 +14,12 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private int m_SelectedIndex;
 
-        // TODO:
-        // [SerializeField]
-        // private PrefabToggleGroup m_Group;
+        [SerializeField]
+        private PrefabToggleGroup m_Group;
 
-        public void OpenToggleGroup()
+        public void Open()
         {
+            m_Group.Open(this);
         }
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2180720869099438907}
   - component: {fileID: 7617808999187751135}
   m_Layer: 0
-  m_Name: AirplaneSprite
+  m_Name: AirportSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
