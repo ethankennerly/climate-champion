@@ -53,6 +53,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Other options lose highlight.
     1. Touched option is activated.
     1. Selecting one replaces the others on map.
+    1. [ ] Switching does not reset timer to emit.
     1. [ ] Last option is help button.
         1. [ ] Clicking help shows modal with text.
 1. [ ] Drag.

@@ -12,6 +12,9 @@ namespace FineGameDesign.Utils
         private GameObject m_EndGameRoot;
 
         [SerializeField]
+        private GameObject m_ActiveDuringPlay;
+
+        [SerializeField]
         private DeltaTimeSystemView m_DeltaTime;
 
         private Action<ItemType> m_OnFull;
@@ -35,6 +38,7 @@ namespace FineGameDesign.Utils
 
             m_DeltaTime.enabled = false;
             m_EndGameRoot.SetActive(true);
+            m_ActiveDuringPlay.SetActive(false);
         }
     }
 }

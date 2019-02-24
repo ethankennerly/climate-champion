@@ -460,6 +460,11 @@ PrefabInstance:
       propertyPath: m_EndGameRoot
       value: 
       objectReference: {fileID: 2471568805733290371}
+    - target: {fileID: 5430013365588887951, guid: d5f7200f9337a664c9e28acb83f495a9,
+        type: 3}
+      propertyPath: m_ActiveDuringPlay
+      value: 
+      objectReference: {fileID: 4154858702978533356}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5f7200f9337a664c9e28acb83f495a9, type: 3}
 --- !u!1 &2471568805733290371 stripped
@@ -638,13 +643,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7315786285156560122}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4154858702978533356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 29740600474249821, guid: 3c22eca9d71449a4d8b8019285ae7704,
+    type: 3}
+  m_PrefabInstance: {fileID: 4161516345228619185}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4154858702978533359 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2678585681312989104, guid: 3c22eca9d71449a4d8b8019285ae7704,
     type: 3}
   m_PrefabInstance: {fileID: 4161516345228619185}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4154858702978533356}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71ea3b7bb1cb443489f86e737e906aca, type: 3}
