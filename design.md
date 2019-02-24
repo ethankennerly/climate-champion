@@ -46,8 +46,8 @@ Climate Champion simulate and animate choices. Choose. Review:
                 1. Restart button.
                 1. Hides gameplay canvas, such as:
                     1. toggle group and
-                    1. [ ] game instructions.
-1. [ ] Clicking replacable item, shows toggle group.
+                    1. game instructions.
+1. Clicking replacable item, shows toggle group.
     1. Click is mouse down and up in the click area.
     1. Toggle group has options for this replacable.
 1. [ ] Toggle group. Touch one.
@@ -59,8 +59,6 @@ Climate Champion simulate and animate choices. Choose. Review:
         - Otherwise, a player's optimal strategy is to repeatedly toggle.
     1. [ ] Last option is help button.
         1. [ ] Clicking help shows modal with text.
-1. [ ] Drag.
-    1. [ ] Map scrolls.
 1. [ ] Power Plant generates CO2 over power produced.
     1. [ ] Coal
     1. [ ] Nuclear
@@ -95,6 +93,8 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. [ ] Reproduction.
     1. [ ] Baby: Creates another house.
     1. [ ] Child free.
+1. [ ] Drag.
+    1. [ ] Map scrolls.
 1. [ ] As demand increases, another supplier spawns.
 1. [ ] House power drain.
     1. [ ] Little.
@@ -115,6 +115,7 @@ Climate Champion simulate and animate choices. Choose. Review:
 - <https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator>
 - <https://medium.com/@razgo/the-new-culture-war-and-other-lessons-from-globescan-ikea-climate-action-research-report-f2eeeaba1226>
 - <https://ocean.si.edu/conservation/climate-change/climate-change-game-tetris>
+- <https://www.investors.com/politics/editorials/climate-change-hypocrisy-goes-mainstream/>
 
 # Reference gameplay
 
