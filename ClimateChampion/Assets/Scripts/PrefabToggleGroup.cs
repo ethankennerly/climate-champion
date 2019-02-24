@@ -19,11 +19,6 @@ namespace FineGameDesign.Utils
             gameObject.SetActive(true);
         }
 
-        public void Close()
-        {
-            gameObject.SetActive(false);
-        }
-
         private void PopulateToggles(GameObject[] optionsToSpawn, int selectedIndex,
             PrefabToggle[] toggles)
         {

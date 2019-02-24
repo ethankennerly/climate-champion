@@ -57,6 +57,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Selecting one replaces the others on map.
     1. Switching does not reset timer to emit.
         - Otherwise, a player's optimal strategy is to repeatedly toggle.
+    1. [ ] Clicking outside toggle area closes group.
     1. [ ] Last option is help button.
         1. [ ] Clicking help shows modal with text.
 1. [ ] Power Plant generates CO2 over power produced.
