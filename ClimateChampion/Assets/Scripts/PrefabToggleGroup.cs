@@ -24,7 +24,7 @@ namespace FineGameDesign.Utils
             gameObject.SetActive(false);
         }
 
-        private static void PopulateToggles(GameObject[] optionsToSpawn, int selectedIndex,
+        private void PopulateToggles(GameObject[] optionsToSpawn, int selectedIndex,
             PrefabToggle[] toggles)
         {
             int index = 0;
@@ -37,19 +37,24 @@ namespace FineGameDesign.Utils
                     toggle.gameObject.SetActive(false);
                     continue;
                 }
+                toggle.Toggle.onValueChanged.RemoveListener(Spawn);
                 toggle.Toggle.isOn = index == selectedIndex;
+                toggle.Toggle.onValueChanged.AddListener(Spawn);
                 toggle.Label.text = optionToSpawn.name;
                 toggle.gameObject.SetActive(true);
                 index++;
             }
         }
 
-        private void Spawn(Toggle selected)
+        private void Spawn(bool selected)
         {
+            if (!selected)
+                return;
+
             int index = 0;
             foreach (PrefabToggle toggle in m_Toggles)
             {
-                if (toggle.Toggle != selected)
+                if (!toggle.Toggle.isOn)
                     continue;
 
                 m_SpawnSite.Spawn(index);
@@ -58,4 +63,3 @@ namespace FineGameDesign.Utils
         }
     }
 }
-

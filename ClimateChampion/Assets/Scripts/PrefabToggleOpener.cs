@@ -39,11 +39,12 @@ namespace FineGameDesign.Utils
             m_SelectedIndex = index;
             if (m_SpawnedInstance != null)
                 Destroy(m_SpawnedInstance);
-            GameObject nextSpawn = index >= m_OptionsToSpawn.Length ? null : m_OptionsToSpawn[index];
-            if (nextSpawn == null)
+
+            GameObject nextPrefab = index >= m_OptionsToSpawn.Length ? null : m_OptionsToSpawn[index];
+            if (nextPrefab == null)
                 return;
 
-            Instantiate(nextSpawn, transform);
+            m_SpawnedInstance = Instantiate(nextPrefab, transform);
         }
     }
 }
