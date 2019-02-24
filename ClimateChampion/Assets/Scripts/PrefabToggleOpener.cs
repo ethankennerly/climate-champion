@@ -37,14 +37,25 @@ namespace FineGameDesign.Utils
                 return;
 
             m_SelectedIndex = index;
+            float remainingTime = 0f;
+            TimedEmitter emitter;
             if (m_SpawnedInstance != null)
+            {
+                emitter = m_SpawnedInstance.GetComponentInChildren<TimedEmitter>();
+                if (emitter != null)
+                    remainingTime = emitter.RemainingTime;
+
                 Destroy(m_SpawnedInstance);
+            }
 
             GameObject nextPrefab = index >= m_OptionsToSpawn.Length ? null : m_OptionsToSpawn[index];
             if (nextPrefab == null)
                 return;
 
             m_SpawnedInstance = Instantiate(nextPrefab, transform);
+            emitter = m_SpawnedInstance.GetComponentInChildren<TimedEmitter>();
+            if (emitter != null)
+                emitter.RemainingTime = remainingTime;
         }
     }
 }

@@ -11,8 +11,15 @@ namespace FineGameDesign.Utils
         private float m_RotationToSpawn;
         [SerializeField]
         private float m_RateOverTime;
+
         [SerializeField]
         private float m_RemainingTime;
+        public float RemainingTime
+        {
+            get { return m_RemainingTime; }
+            set { m_RemainingTime = value; }
+        }
+
         [SerializeField]
         private int m_NumEmissions;
         [SerializeField]
