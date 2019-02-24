@@ -46,3 +46,9 @@ sysinfo.txt
 # JetBrains Rider
 .idea
 /*/.idea
+
+# Windows folder settings
+desktop.ini*
+
+# Mac folder settings
+.DS_Store*
