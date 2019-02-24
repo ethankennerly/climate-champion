@@ -36,10 +36,14 @@ namespace FineGameDesign.Utils
                 if (emissionType != emission.emissionType)
                     continue;
 
-                Instantiate(emission.prefabToSpawn,
-                    new Vector3(traveler.position.x, traveler.position.y, 0f),
-                    Quaternion.identity
-                );
+                if (emission.prefabToSpawn != null)
+                {
+                    Instantiate(emission.prefabToSpawn,
+                        new Vector3(traveler.position.x, traveler.position.y, 0f),
+                        Quaternion.identity
+                    );
+                }
+
             }
         }
     }

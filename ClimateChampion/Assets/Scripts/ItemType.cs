@@ -3,6 +3,7 @@ namespace FineGameDesign.Utils
     public enum ItemType
     {
         Unknown,
-        CarbonDioxide
+        CarbonDioxide,
+        CarbonDioxideInTroposphere
     }
 }

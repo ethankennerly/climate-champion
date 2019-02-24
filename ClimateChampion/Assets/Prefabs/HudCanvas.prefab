@@ -477,6 +477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2737302706132775071}
+  - component: {fileID: 7409279333712043614}
   m_Layer: 5
   m_Name: CarbonDioxidePanel
   m_TagString: Untagged
@@ -506,6 +507,23 @@ RectTransform:
   m_AnchoredPosition: {x: 111.6, y: -17.865}
   m_SizeDelta: {x: 212.1, y: 33.33}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7409279333712043614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7051396266718472051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb5e0bc015d25144b6b2a77f89dd50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EmissionType: 2
+  m_Capacity: 0
+  m_Quantity: 0
+  m_QuantityPerEmission: 0.0125
+  m_MeterFill: {fileID: 1496066583384977609}
 --- !u!1 &7522855883971519008
 GameObject:
   m_ObjectHideFlags: 0
