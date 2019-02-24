@@ -3,14 +3,13 @@
 - Delta Time System
 - Text Timer View
 - Traveler
-
-# TODO
-
 - Distance Emitter
     - Type
     - Rate Over Distance
+
+# TODO
+
 - Timed Emitter
     - Type
     - Rate Over Time
-- Nav Grid
-
+- Pool carbon emission
