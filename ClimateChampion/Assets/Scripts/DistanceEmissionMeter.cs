@@ -6,13 +6,15 @@ namespace FineGameDesign.Utils
 {
     public sealed class DistanceEmissionMeter : MonoBehaviour
     {
+        public static event Action OnFull;
+
         private Action<TravelerData, ItemType> m_Emit;
 
         [SerializeField]
         private ItemType m_EmissionType;
 
         [SerializeField]
-        private float m_Capacity;
+        private float m_Capacity = 1f;
 
         [SerializeField]
         private float m_Quantity;
@@ -43,12 +45,16 @@ namespace FineGameDesign.Utils
                 return;
 
             m_Quantity += m_QuantityPerEmission;
+            if (m_Quantity >= m_Capacity)
+                if (OnFull != null)
+                    OnFull();
+
             UpdateView();
         }
 
         private void UpdateView()
         {
-            m_MeterFill.fillAmount = m_Quantity;
+            m_MeterFill.fillAmount = m_Quantity / m_Capacity;
         }
     }
 }
