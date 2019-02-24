@@ -6,10 +6,17 @@
 - Distance Emitter
     - Type
     - Rate Over Distance
-
-# TODO
-
 - Timed Emitter
     - Type
     - Rate Over Time
+
+# TODO
+
 - Pool carbon emission
+
+# Postmortem
+
+- Overengineered Distance Emitter.
+    - Timed Emitter simpler than Distance Emitter.
+    - Decoupling unnecessarily added complexity.
+    - Also, since time converts into distance, could have used timed emitter instead of distance emitter.
