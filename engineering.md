@@ -12,6 +12,14 @@
 
 # TODO
 
+- Prefab Toggle Opener
+    - Open button
+    - Spawned instance
+    - List of prefabs
+    - Selected index
+- Prefab Toggle Group
+    - Prefab Toggle Opener
+    - Toggles
 - Pool carbon emission
 
 # Postmortem

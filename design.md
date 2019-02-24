@@ -46,8 +46,9 @@ Climate Champion simulate and animate choices. Choose. Review:
                 1. Restart button.
 1. [ ] Clicking replacable item, shows toggle group.
     1. [ ] Click is mouse down and up in the click area.
+    1. [ ] Toggle group has options for this replacable.
 1. [ ] Toggle group. Touch one.
-    1. [ ] Highlights option, such as vehicle.
+    1. [ ] Highlights selected option, such as vehicle.
     1. [ ] Other options lose highlight.
     1. [ ] Touched option is activated.
     1. [ ] Selecting one replaces the others on map.
@@ -93,6 +94,9 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. [ ] House power drain.
     1. [ ] Little.
     1. [ ] Lot.
+1. [ ] Speed up and slow down time.
+    1. [ ] Read from x1/8 to x8.
+    1. [ ] Button to slow down speed up.
 
 # Reference carbon footprints
 
