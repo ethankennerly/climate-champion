@@ -8,4 +8,5 @@ Artwork made by others have their own licenses.
 - <https://opengameart.org/content/simerion-tiles-and-images>
 - <https://opengameart.org/content/lightning-cloud>
 - <https://opengameart.org/content/isometric-vehicles-1>
+- <https://opengameart.org/content/racing-pack>
 - <https://github.com/ethankennerly/powerplant>
