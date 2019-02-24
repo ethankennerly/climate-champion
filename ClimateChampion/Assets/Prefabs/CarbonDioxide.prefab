@@ -66,6 +66,8 @@ MonoBehaviour:
     emissionType: 2
     rateOverDistance: 2
     remainingDistance: 0
+    emitted: 0
+    emissionDestroysTraveler: 1
 --- !u!1 &8185328147311737148
 GameObject:
   m_ObjectHideFlags: 0
