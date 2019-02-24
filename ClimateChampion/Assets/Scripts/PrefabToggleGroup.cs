@@ -35,6 +35,7 @@ namespace FineGameDesign.Utils
                 if (optionToSpawn == null)
                 {
                     toggle.gameObject.SetActive(false);
+                    index++;
                     continue;
                 }
                 toggle.Toggle.onValueChanged.RemoveListener(Spawn);
@@ -51,14 +52,16 @@ namespace FineGameDesign.Utils
             if (!selected)
                 return;
 
-            int index = 0;
-            foreach (PrefabToggle toggle in m_Toggles)
+            for (int index = 0, numToggles = m_Toggles.Length; index < numToggles; ++index)
             {
+                PrefabToggle toggle = m_Toggles[index];
+                if (!toggle.gameObject.activeSelf)
+                    continue;
+
                 if (!toggle.Toggle.isOn)
                     continue;
 
                 m_SpawnSite.Spawn(index);
-                index++;
             }
         }
     }
