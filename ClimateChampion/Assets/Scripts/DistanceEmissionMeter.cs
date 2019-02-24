@@ -6,7 +6,7 @@ namespace FineGameDesign.Utils
 {
     public sealed class DistanceEmissionMeter : MonoBehaviour
     {
-        public static event Action OnFull;
+        public static event Action<ItemType> OnFull;
 
         private Action<TravelerData, ItemType> m_Emit;
 
@@ -47,7 +47,7 @@ namespace FineGameDesign.Utils
             m_Quantity += m_QuantityPerEmission;
             if (m_Quantity >= m_Capacity)
                 if (OnFull != null)
-                    OnFull();
+                    OnFull(m_EmissionType);
 
             UpdateView();
         }

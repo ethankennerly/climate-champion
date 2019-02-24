@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6626524708174102185}
   - component: {fileID: 9127344612351240132}
   - component: {fileID: 6626524708174102184}
+  - component: {fileID: 5430013365588887951}
   m_Layer: 0
   m_Name: Systems
   m_TagString: Untagged
@@ -73,3 +74,18 @@ MonoBehaviour:
   - emissionType: 1
     prefabToSpawn: {fileID: 986915887272957831, guid: 0769c6bff573fd44e9aa1e6ed46085eb,
       type: 3}
+--- !u!114 &5430013365588887951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6626524708174102183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e78379330914e04896b0383c9cbced2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EmissionType: 2
+  m_EndGameRoot: {fileID: 0}
+  m_DeltaTime: {fileID: 9127344612351240132}
