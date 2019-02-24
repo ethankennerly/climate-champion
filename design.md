@@ -36,14 +36,14 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Year 2000.
     1. After tap start, each second or two, year increments.
     1. CO2 meter.
-1. [ ] Emit CO2:
+1. Emit CO2:
     1. Gray cloud rises up.
     1. After rising up, CO2 meter increases.
-        1. [ ] If CO2 meter reaches max:
-            1. [ ] Game ends.
-                1. [ ] Prompt: How long can you survive?
-                1. [ ] Current year.
-                1. [ ] Restart button.
+        1. If CO2 meter reaches max:
+            1. Game ends.
+                1. Prompt: How long can you survive?
+                1. Current year.
+                1. Restart button.
 1. [ ] Clicking replacable item, shows toggle group.
     1. [ ] Click is mouse down and up in the click area.
 1. [ ] Toggle group. Touch one.

@@ -31,7 +31,7 @@ namespace FineGameDesign.Utils
 
             emitter.remainingDistance -= emitter.rateOverDistance;
 
-            emitter.emitted = true;
+            emitter.numEmissions++;
 
             if (OnEmitted != null)
                 OnEmitted(traveler, emitter.emissionType);

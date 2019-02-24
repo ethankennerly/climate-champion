@@ -37,7 +37,8 @@ namespace FineGameDesign.Utils
             if (OnDistanceChanged != null)
                 OnDistanceChanged(m_Data, traveler);
 
-            if (m_Data.emitted && m_Data.emissionDestroysTraveler)
+            if (m_Data.numEmissionsToDestroyEmitter > 0 &&
+                m_Data.numEmissions >= m_Data.numEmissionsToDestroyEmitter)
                 Destroy(gameObject);
         }
     }
