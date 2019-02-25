@@ -38,6 +38,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. CO2 meter.
 1. Emit CO2:
     1. Gray cloud rises up.
+    1. Hear sound.
     1. After rising up, CO2 meter increases.
         1. If CO2 meter reaches max:
             1. Game ends.

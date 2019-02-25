@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Data:
     emissionType: 3
-    rateOverDistance: 2
+    rateOverDistance: 0.75
     remainingDistance: 0
     numEmissions: 0
     numEmissionsToDestroyEmitter: 1
