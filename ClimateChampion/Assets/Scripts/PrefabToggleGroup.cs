@@ -6,11 +6,18 @@ namespace FineGameDesign.Utils
 {
     public sealed class PrefabToggleGroup : MonoBehaviour
     {
+        public static PrefabToggleGroup Instance { get; private set; }
+
         [SerializeField]
         private PrefabToggleOpener m_SpawnSite;
 
         [SerializeField]
         private PrefabToggle[] m_Toggles;
+
+        private void OnEnable()
+        {
+            Instance = this;
+        }
 
         public void Open(PrefabToggleOpener spawnSite)
         {

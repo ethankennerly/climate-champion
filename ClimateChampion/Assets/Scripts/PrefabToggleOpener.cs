@@ -26,6 +26,12 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private PrefabToggleGroup m_Group;
 
+        private void OnEnable()
+        {
+            if (m_Group == null)
+                m_Group = PrefabToggleGroup.Instance;
+        }
+
         public void Open()
         {
             m_Group.Open(this);
