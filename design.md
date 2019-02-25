@@ -81,16 +81,19 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. Farm generates CO2 over food produced.
     1. Omnivore
     1. Herbivore: Half CO2.
-1. [ ] Shop.
-    1. [ ] Produces goods. Generates CO2 over good produced.
-    1. [ ] Little.
-    1. [ ] A lot.
-1. [ ] Services.
-    1. [ ] Produces services. Generates CO2 over services produced.
-    1. [ ] Little.
-    1. [ ] A lot.
+1. Shop.
+    1. Produces goods. Generates CO2 over good produced.
+    1. Little.
+    1. A lot.
+1. Services.
+    1. Produces services. Generates CO2 over services produced.
+    1. Little.
+    1. A lot.
 1. [ ] Reproduction.
-    1. [ ] Two babies: Doubles every station.
+    1. [ ] Baby: Doubles every station in 30 years.
+        1. [ ] Resets to default.
+        1. [ ] After 100 years, station disappears.
+        1. [ ] Position Offsets.
     1. [ ] Child free.
 1. [ ] Civil Services
 1. [ ] Military
@@ -100,6 +103,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Goods.
     1. [ ] Services.
     1. [ ] Money to pay for the above.
+1. [ ] Gradually animate weather effect of CO2 concentration.
 1. [ ] Isometric grid of a town.
 1. [ ] Work produces money.
     1. [ ] Work also consumes resources like a house.
