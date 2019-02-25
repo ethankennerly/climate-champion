@@ -9,9 +9,6 @@
 - Timed Emitter
     - Type
     - Rate Over Time
-
-# TODO
-
 - Prefab Toggle Opener
     - Open button
     - Spawned instance
@@ -20,6 +17,9 @@
 - Prefab Toggle Group
     - Prefab Toggle Opener
     - Toggles
+
+# TODO
+
 - Pool carbon emission
 
 # Postmortem

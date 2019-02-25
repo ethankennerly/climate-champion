@@ -176,6 +176,7 @@ MonoBehaviour:
   m_OptionsToSpawn:
   - {fileID: 4659036708339039299, guid: 2ad2dd52499cb9b42b129f28075dc266, type: 3}
   - {fileID: 7016049534580196888, guid: b015690056c3b6c48bf0c4cf402a884a, type: 3}
+  - {fileID: 7016049534580196888, guid: d22df3ec5b88809458363c3d0aedb097, type: 3}
   m_SelectedIndex: 0
   m_Group: {fileID: 0}
 --- !u!1 &6361346511103905524

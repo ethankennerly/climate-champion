@@ -64,10 +64,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Data:
     emissionType: 1
-    rateOverDistance: 0.5
+    rateOverDistance: 0.25
     remainingDistance: 0
     numEmissions: 0
-    numEmissionsToDestroyEmitter: 1
+    numEmissionsToDestroyEmitter: 2
 --- !u!1 &7672858023267322337
 GameObject:
   m_ObjectHideFlags: 0

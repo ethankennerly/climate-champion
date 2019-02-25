@@ -57,9 +57,14 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Selecting one replaces the others on map.
     1. Switching does not reset timer to emit.
         - Otherwise, a player's optimal strategy is to repeatedly toggle.
-    1. [ ] Clicking outside toggle area closes group.
+    1. Clicking outside toggle area closes group.
     1. [ ] Last option is help button.
         1. [ ] Clicking help shows modal with text.
+1. [ ] Vacation.
+    1. [ ] Airplane
+    1. [ ] Car
+    1. [ ] Train
+    1. [ ] Bicycle: No CO2.
 1. [ ] Power Plant generates CO2 over power produced.
     1. [ ] Coal
     1. [ ] Nuclear
@@ -72,17 +77,13 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Goods.
     1. [ ] Services.
     1. [ ] Money to pay for the above.
+1. [ ] Isometric grid of a town.
 1. [ ] Work produces money.
     1. [ ] Commute:
         1. [ ] Car
         1. [ ] Train
         1. [ ] Bicycle: No CO2.
     1. [ ] Work also consumes resources like a house.
-1. [ ] Vacation.
-    1. [ ] Airplane
-    1. [ ] Car
-    1. [ ] Train
-    1. [ ] Bicycle: No CO2.
 1. [ ] Shop.
     1. [ ] Produces goods. Generates CO2 over good produced.
     1. [ ] Little.
@@ -117,6 +118,7 @@ Climate Champion simulate and animate choices. Choose. Review:
 - <https://medium.com/@razgo/the-new-culture-war-and-other-lessons-from-globescan-ikea-climate-action-research-report-f2eeeaba1226>
 - <https://ocean.si.edu/conservation/climate-change/climate-change-game-tetris>
 - <https://www.investors.com/politics/editorials/climate-change-hypocrisy-goes-mainstream/>
+- <https://www.vox.com/energy-and-environment/2017/7/14/15963544/climate-change-individual-choices>
 
 # Reference gameplay
 
