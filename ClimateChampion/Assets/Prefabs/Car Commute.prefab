@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 5426910563766143657}
   - component: {fileID: 7135794559490434692}
   m_Layer: 0
-  m_Name: Carport
+  m_Name: Car Commute
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PrefabToSpawn: {fileID: 3606701458020833850, guid: 1e25457ec22682346a95fe17d2cabfde,
+  m_PrefabToSpawn: {fileID: 3606701458020833850, guid: 395cfd4bacbbda548874e90eafbc6f5e,
     type: 3}
   m_RotationToSpawn: 180
   m_RateOverTime: 6

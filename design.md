@@ -71,25 +71,16 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Bicycle: No CO2.
     1. [ ] Vehicles emerge from base of building.
     1. [ ] Vehicles do not collide.
-1. [ ] Power Plant generates CO2 over power produced.
-    1. [ ] Coal
-    1. [ ] Nuclear
+1. Power Plant generates CO2 over power produced.
+    1. Coal
+    1. Nuclear
+1. [ ] Commute:
+    1. [ ] Car
+    1. [ ] Train
+    1. [ ] Bicycle: No CO2.
 1. [ ] Farm generates CO2 over food produced.
     1. [ ] Omnivore
     1. [ ] Herbivore: Half CO2.
-1. [ ] House consumes.
-    1. [ ] Food.
-    1. [ ] Power.
-    1. [ ] Goods.
-    1. [ ] Services.
-    1. [ ] Money to pay for the above.
-1. [ ] Isometric grid of a town.
-1. [ ] Work produces money.
-    1. [ ] Commute:
-        1. [ ] Car
-        1. [ ] Train
-        1. [ ] Bicycle: No CO2.
-    1. [ ] Work also consumes resources like a house.
 1. [ ] Shop.
     1. [ ] Produces goods. Generates CO2 over good produced.
     1. [ ] Little.
@@ -101,6 +92,15 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. [ ] Reproduction.
     1. [ ] Baby: Creates another house.
     1. [ ] Child free.
+1. [ ] House consumes.
+    1. [ ] Food.
+    1. [ ] Power.
+    1. [ ] Goods.
+    1. [ ] Services.
+    1. [ ] Money to pay for the above.
+1. [ ] Isometric grid of a town.
+1. [ ] Work produces money.
+    1. [ ] Work also consumes resources like a house.
 1. [ ] Drag.
     1. [ ] Map scrolls.
 1. [ ] As demand increases, another supplier spawns.
