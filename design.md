@@ -78,9 +78,9 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Car
     1. Train
     1. Bicycle: No CO2.
-1. [ ] Farm generates CO2 over food produced.
-    1. [ ] Omnivore
-    1. [ ] Herbivore: Half CO2.
+1. Farm generates CO2 over food produced.
+    1. Omnivore
+    1. Herbivore: Half CO2.
 1. [ ] Shop.
     1. [ ] Produces goods. Generates CO2 over good produced.
     1. [ ] Little.
@@ -92,6 +92,8 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. [ ] Reproduction.
     1. [ ] Two babies: Doubles every station.
     1. [ ] Child free.
+1. [ ] Civil Services
+1. [ ] Military
 1. [ ] House consumes.
     1. [ ] Food.
     1. [ ] Power.
