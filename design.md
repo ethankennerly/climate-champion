@@ -60,11 +60,13 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Clicking outside toggle area closes group.
     1. [ ] Last option is help button.
         1. [ ] Clicking help shows modal with text.
-1. [ ] Vacation.
-    1. [ ] Airplane
-    1. [ ] Car
-    1. [ ] Train
-    1. [ ] Bicycle: No CO2.
+1. Vacation.
+    1. Airplane
+    1. Car
+    1. Train
+    1. Bicycle: No CO2.
+    1. [ ] Vehicles emerge from base of building.
+    1. [ ] Vehicles do not collide.
 1. [ ] Power Plant generates CO2 over power produced.
     1. [ ] Coal
     1. [ ] Nuclear

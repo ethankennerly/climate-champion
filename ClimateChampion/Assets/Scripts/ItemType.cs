@@ -4,6 +4,7 @@ namespace FineGameDesign.Utils
     {
         Unknown,
         CarbonDioxide,
-        CarbonDioxideInTroposphere
+        CarbonDioxideInTroposphere,
+        Negligible
     }
 }
