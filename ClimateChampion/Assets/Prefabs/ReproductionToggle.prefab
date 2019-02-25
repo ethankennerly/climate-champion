@@ -110,6 +110,21 @@ PrefabInstance:
       propertyPath: m_RateOverTime
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5778285357903314810, guid: 90be8ebd0a49f6140a3313527eaeca4f,
+        type: 3}
+      propertyPath: m_OffsetPerSpawn.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778285357903314810, guid: 90be8ebd0a49f6140a3313527eaeca4f,
+        type: 3}
+      propertyPath: m_OffsetPerSpawn.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778285357903314810, guid: 90be8ebd0a49f6140a3313527eaeca4f,
+        type: 3}
+      propertyPath: m_OffsetPerSpawn.z
+      value: -0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90be8ebd0a49f6140a3313527eaeca4f, type: 3}
 --- !u!1 &5640823239204701276 stripped

@@ -10,6 +10,8 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private float m_RotationToSpawn;
         [SerializeField]
+        private Vector3 m_OffsetPerSpawn;
+        [SerializeField]
         private float m_RateOverTime;
 
         [SerializeField]
@@ -52,8 +54,9 @@ namespace FineGameDesign.Utils
 
             if (m_PrefabToSpawn != null)
             {
-                Quaternion rotation = Quaternion.Euler(0f, 0f, m_RotationToSpawn);
-                Instantiate(m_PrefabToSpawn, transform.position, rotation);
+                Quaternion spawnRotation = Quaternion.Euler(0f, 0f, m_RotationToSpawn);
+                Vector3 spawnPosition = transform.position + (m_OffsetPerSpawn * m_NumEmissions);
+                Instantiate(m_PrefabToSpawn, spawnPosition, spawnRotation);
             }
 
             if (m_NumEmissionsToDestroyEmitter > 0 &&
