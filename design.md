@@ -74,10 +74,10 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. Power Plant generates CO2 over power produced.
     1. Coal
     1. Nuclear
-1. [ ] Commute:
-    1. [ ] Car
-    1. [ ] Train
-    1. [ ] Bicycle: No CO2.
+1. Commute:
+    1. Car
+    1. Train
+    1. Bicycle: No CO2.
 1. [ ] Farm generates CO2 over food produced.
     1. [ ] Omnivore
     1. [ ] Herbivore: Half CO2.
@@ -90,7 +90,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Little.
     1. [ ] A lot.
 1. [ ] Reproduction.
-    1. [ ] Baby: Creates another house.
+    1. [ ] Two babies: Doubles every station.
     1. [ ] Child free.
 1. [ ] House consumes.
     1. [ ] Food.
