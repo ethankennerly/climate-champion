@@ -25,13 +25,9 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. How long can you survive?
     1. Start button.
     1. [ ] Best year.
-1. [ ] Vehicle moves horizontally on a schedule, returning to it's start location:
-    1. Vehicle moves forward.
+1. Vehicle moves forward.
     1. Each unit of distance traveled by vehicle, emit CO2.
-    1. [ ] Airplane: Fast and travels many laps.
-    1. [ ] Car
-    1. [ ] Train
-    1. [ ] Bicycle: No CO2.
+    1. [ ] Vehicle moves horizontally on a schedule, returning to it's start location:
 1. HUD.
     1. Year 2000.
     1. After tap start, each second or two, year increments.
@@ -89,14 +85,19 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Produces services. Generates CO2 over services produced.
     1. Little.
     1. A lot.
-1. [ ] Reproduction.
-    1. [ ] Baby: Doubles every station in 30 years.
+1. Reproduction.
+    1. Have Three Or More Children: Doubles every station in 30 years.
         1. [ ] Resets to default.
         1. [ ] After 100 years, station disappears.
-        1. [ ] Position Offsets.
+        1. Position Offsets.
     1. [ ] Child free.
-1. [ ] Civil Services
-1. [ ] Military
+1. [ ] Taxes
+    1. [ ] United States
+    1. [ ] India
+1. [ ] Investments
+1. [ ] Lightbulbs
+1. [ ] Water Use
+1. [ ] Electronics
 1. [ ] House consumes.
     1. [ ] Food.
     1. [ ] Power.
@@ -116,7 +117,6 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. [ ] Speed up and slow down time.
     1. [ ] Read from x1/8 to x8.
     1. [ ] Button to slow down speed up.
-
 
 # Reference gameplay
 
