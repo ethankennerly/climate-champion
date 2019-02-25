@@ -51,15 +51,17 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. Clicking replacable item, shows toggle group.
     1. Click is mouse down and up in the click area.
     1. Toggle group has options for this replacable.
-1. [ ] Toggle group. Touch one.
+1. Toggle group. Touch one.
     1. Highlights selected option, such as vehicle.
+    1. Highlights object selected.
     1. Other options lose highlight.
     1. Touched option is activated.
     1. Selecting one replaces the others on map.
     1. Switching does not reset timer to emit.
         - Otherwise, a player's optimal strategy is to repeatedly toggle.
     1. Clicking outside toggle area closes group.
-    1. [ ] Last option is help button.
+    1. [ ] While toggle group is open, highlights which object on map is being replaced.
+    1. [ ] Last toggle group option is help button.
         1. [ ] Clicking help shows modal with text.
 1. Vacation.
     1. Airplane
