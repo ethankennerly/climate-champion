@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 8676108630088864599}
   - component: {fileID: 5778285357903314810}
   m_Layer: 0
-  m_Name: Animal Farm
+  m_Name: Omnivorous Diet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,7 +126,8 @@ MonoBehaviour:
   m_PrefabToSpawn: {fileID: 986915887272957831, guid: 0769c6bff573fd44e9aa1e6ed46085eb,
     type: 3}
   m_RotationToSpawn: 90
-  m_RateOverTime: 1
+  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
+  m_RateOverTime: 0.4
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 0
