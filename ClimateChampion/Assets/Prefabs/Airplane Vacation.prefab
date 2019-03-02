@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PrefabToSpawn: {fileID: 5490390011349796546, guid: fc34614f2ad3d084db5c066676d05c13,
     type: 3}
-  m_RotationToSpawn: 180
+  m_RotationToSpawn: 210
   m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
   m_RateOverTime: 4.5
   m_RemainingTime: 0

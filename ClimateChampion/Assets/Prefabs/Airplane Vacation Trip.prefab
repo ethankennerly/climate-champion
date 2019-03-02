@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 1151775491921859904}
   - component: {fileID: 5924818741395541744}
   m_Layer: 0
-  m_Name: Airplane
+  m_Name: Airplane Vacation Trip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Data:
-    rotation: 180
+    rotation: 210
     speed: 5
     position: {x: 2, y: 1}
     deltaDistance: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8198722619209173432}
   - component: {fileID: 1573928868561797642}
   m_Layer: 0
-  m_Name: Car
+  m_Name: Car Vacation Trip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Data:
-    rotation: 180
+    rotation: 210
     speed: 0.5
     position: {x: 2, y: 0}
     deltaDistance: 0
