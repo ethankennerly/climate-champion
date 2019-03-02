@@ -59,7 +59,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. While toggle group is open, highlights which object on map is being replaced.
         1. Background callout of object being replaced.
         1. Label at object being replaced.
-    1. [ ] Show icon of object to replace with.
+    1. Show icon of object to replace with.
     1. [ ] Last toggle group option is help button.
         1. [ ] Clicking help shows modal with text.
 1. [ ] Align places to an isometric grid.
@@ -113,6 +113,8 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Stocks
     1. [ ] Tech Stocks
     1. [ ] Industrial Stocks
+1. [ ] Levels.
+    1. [ ] Win by surviving until 2099.
 1. [ ] Ocean and plants absorb CO2.
     1. [ ] Animate CO2 emitted from meter down to ocean and plants.
 1. [ ] Lightbulbs
