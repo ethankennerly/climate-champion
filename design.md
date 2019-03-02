@@ -56,12 +56,12 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Switching does not reset timer to emit.
         - Otherwise, a player's optimal strategy is to repeatedly toggle.
     1. Clicking outside toggle area closes group.
-    1. [ ] While toggle group is open, highlights which object on map is being replaced.
+    1. While toggle group is open, highlights which object on map is being replaced.
         1. Background callout of object being replaced.
-        1. [ ] Label at object being replaced.
+        1. Label at object being replaced.
+    1. [ ] Show icon of object to replace with.
     1. [ ] Last toggle group option is help button.
         1. [ ] Clicking help shows modal with text.
-    1. [ ] Show icon of object to replace with.
 1. [ ] Align places to an isometric grid.
 1. Vacation.
     1. Airplane

@@ -56,6 +56,8 @@ namespace FineGameDesign.Utils
                 toggle.Toggle.isOn = index == selectedIndex;
                 toggle.Toggle.onValueChanged.AddListener(Spawn);
                 toggle.Label.text = optionToSpawn.name;
+                SpriteRenderer renderer = optionToSpawn.GetComponentInChildren<SpriteRenderer>();
+                toggle.Preview.sprite = renderer.sprite;
                 toggle.gameObject.SetActive(true);
                 index++;
             }

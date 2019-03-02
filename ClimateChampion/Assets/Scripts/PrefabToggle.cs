@@ -19,5 +19,12 @@ namespace FineGameDesign.Utils
         {
             get { return m_Toggle; }
         }
+
+        [SerializeField]
+        private Image m_Preview;
+        public Image Preview
+        {
+            get { return m_Preview; }
+        }
     }
 }
