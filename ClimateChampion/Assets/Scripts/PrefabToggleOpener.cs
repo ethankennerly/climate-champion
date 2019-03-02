@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace FineGameDesign.Utils
@@ -7,6 +8,9 @@ namespace FineGameDesign.Utils
     {
         [SerializeField]
         private GameObject m_SpawnedInstance;
+
+        [SerializeField]
+        private TMP_Text m_SpawnedLabel;
 
         [SerializeField]
         private GameObject m_SelectedCallout;
@@ -44,11 +48,16 @@ namespace FineGameDesign.Utils
         {
             m_Group.Open(this);
             m_SelectedCallout.SetActive(true);
+            if (m_SpawnedInstance != null)
+            {
+                m_SpawnedLabel.text = m_SpawnedInstance.name;
+            }
         }
 
         public void Close()
         {
             m_SelectedCallout.SetActive(false);
+            m_SpawnedLabel.text = "";
         }
 
         public void Spawn(int index)
