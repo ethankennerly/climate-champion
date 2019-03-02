@@ -9,6 +9,9 @@ namespace FineGameDesign.Utils
         private GameObject m_SpawnedInstance;
 
         [SerializeField]
+        private GameObject m_SelectedCallout;
+
+        [SerializeField]
         private GameObject[] m_OptionsToSpawn;
         public GameObject[] OptionsToSpawn
         {
@@ -26,6 +29,11 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private PrefabToggleGroup m_Group;
 
+        private void Start()
+        {
+            Close();
+        }
+
         private void OnEnable()
         {
             if (m_Group == null)
@@ -35,6 +43,12 @@ namespace FineGameDesign.Utils
         public void Open()
         {
             m_Group.Open(this);
+            m_SelectedCallout.SetActive(true);
+        }
+
+        public void Close()
+        {
+            m_SelectedCallout.SetActive(false);
         }
 
         public void Spawn(int index)

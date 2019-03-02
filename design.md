@@ -27,7 +27,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Best year.
 1. Vehicle moves forward.
     1. Each unit of distance traveled by vehicle, emit CO2.
-    1. [ ] Vehicle moves horizontally on a schedule, returning to it's start location:
+    1. [ ] Vehicle moves horizontally on a schedule, returning to it's start location.
 1. HUD.
     1. Year 2000.
     1. After tap start, each second or two, year increments.
@@ -56,10 +56,13 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Switching does not reset timer to emit.
         - Otherwise, a player's optimal strategy is to repeatedly toggle.
     1. Clicking outside toggle area closes group.
-    1. [ ] Label at group.
     1. [ ] While toggle group is open, highlights which object on map is being replaced.
+        1. Background callout of object being replaced.
+        1. [ ] Label at object being replaced.
     1. [ ] Last toggle group option is help button.
         1. [ ] Clicking help shows modal with text.
+    1. [ ] Show icon of object to replace with.
+1. [ ] Align places to an isometric grid.
 1. Vacation.
     1. Airplane
     1. Car
@@ -91,6 +94,9 @@ Climate Champion simulate and animate choices. Choose. Review:
         1. After 80 years, toggler per capita disappears.
             1. Extract reproduction toggle to toggles per capita.
             1. [ ] Animate disappearance.
+                1. [ ] Sprite of person at each place.
+                1. [ ] Swap sprite for age of person.
+                1. [ ] Animate person visiting each place.
             1. [ ] After last capita disappears, end game.
         1. Position Offsets.
         1. [ ] Find empty place for new spawns.
@@ -99,15 +105,20 @@ Climate Champion simulate and animate choices. Choose. Review:
         1. Represents repopulation once, because two children will replace two parents.
     1. Have Four Children.
 1. Calibrate emission metrics to citations.
-    1. [ ] Calibrate CO2 per capita to raise 4 C.
+    1. Calibrate CO2 per capita to raise 4 C.
 1. [ ] Taxes
     1. [ ] United States
     1. [ ] India
 1. [ ] Investments
+    1. [ ] Stocks
+    1. [ ] Tech Stocks
+    1. [ ] Industrial Stocks
 1. [ ] Ocean and plants absorb CO2.
+    1. [ ] Animate CO2 emitted from meter down to ocean and plants.
 1. [ ] Lightbulbs
 1. [ ] Water Use
 1. [ ] Electronics
+1. [ ] Power plant type affects goods/services CO2 emissions.
 1. [ ] House consumes.
     1. [ ] Food.
     1. [ ] Power.

@@ -14,6 +14,11 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private PrefabToggle[] m_Toggles;
 
+        private void Start()
+        {
+            Close();
+        }
+
         private void OnEnable()
         {
             Instance = this;
@@ -24,6 +29,13 @@ namespace FineGameDesign.Utils
             m_SpawnSite = spawnSite;
             PopulateToggles(spawnSite.OptionsToSpawn, spawnSite.SelectedIndex, m_Toggles);
             gameObject.SetActive(true);
+        }
+
+        public void Close()
+        {
+            if (m_SpawnSite != null)
+                m_SpawnSite.Close();
+            gameObject.SetActive(false);
         }
 
         private void PopulateToggles(GameObject[] optionsToSpawn, int selectedIndex,
