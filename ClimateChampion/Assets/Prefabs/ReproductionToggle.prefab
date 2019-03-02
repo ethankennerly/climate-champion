@@ -42,7 +42,7 @@ PrefabInstance:
     - target: {fileID: 5938553914731257830, guid: 90be8ebd0a49f6140a3313527eaeca4f,
         type: 3}
       propertyPath: m_Name
-      value: Reproduce Twice
+      value: Have Three Children
       objectReference: {fileID: 0}
     - target: {fileID: 8676108630088864599, guid: 90be8ebd0a49f6140a3313527eaeca4f,
         type: 3}
@@ -105,11 +105,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2303494335279534078, guid: 7381a96cd4ee199408ef0eadcc519f70,
         type: 3}
-    - target: {fileID: 5778285357903314810, guid: 90be8ebd0a49f6140a3313527eaeca4f,
-        type: 3}
-      propertyPath: m_RateOverTime
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5778285357903314810, guid: 90be8ebd0a49f6140a3313527eaeca4f,
         type: 3}
       propertyPath: m_OffsetPerSpawn.x

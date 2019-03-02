@@ -284,6 +284,11 @@ PrefabInstance:
       propertyPath: m_RotationToSpawn
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5640823239204701276, guid: e456552b1abbd7141a23dd2ccc3f5163,
+        type: 3}
+      propertyPath: m_Name
+      value: Have Three Children
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e456552b1abbd7141a23dd2ccc3f5163, type: 3}
 --- !u!4 &1910772036 stripped

@@ -286,7 +286,8 @@ MonoBehaviour:
   m_PrefabToSpawn: {fileID: 2303494335279534078, guid: 7381a96cd4ee199408ef0eadcc519f70,
     type: 3}
   m_RotationToSpawn: 0
-  m_RateOverTime: 10
+  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
+  m_RateOverTime: 60
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 0
