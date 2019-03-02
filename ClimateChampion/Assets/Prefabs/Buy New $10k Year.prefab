@@ -68,7 +68,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: edaf19f498f38b045aad37cb711cc737, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e16cf0b75245c9946a98013b467ee67f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 8676108630088864599}
   - component: {fileID: 5778285357903314810}
   m_Layer: 0
-  m_Name: Services $20k Year
+  m_Name: Buy New $10k Year
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,7 +126,8 @@ MonoBehaviour:
   m_PrefabToSpawn: {fileID: 986915887272957831, guid: 0769c6bff573fd44e9aa1e6ed46085eb,
     type: 3}
   m_RotationToSpawn: 90
-  m_RateOverTime: 1
+  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
+  m_RateOverTime: 0.2
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 0
