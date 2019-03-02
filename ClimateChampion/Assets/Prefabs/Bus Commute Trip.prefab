@@ -146,4 +146,4 @@ MonoBehaviour:
     rateOverDistance: 0.5
     remainingDistance: 0
     numEmissions: 0
-    numEmissionsToDestroyEmitter: 2
+    numEmissionsToDestroyEmitter: 3

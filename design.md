@@ -91,10 +91,12 @@ Climate Champion simulate and animate choices. Choose. Review:
         1. [ ] After 100 years, station disappears.
         1. Position Offsets.
     1. [ ] Child free.
+1. [ ] Inspect emission metrics.
 1. [ ] Taxes
     1. [ ] United States
     1. [ ] India
 1. [ ] Investments
+1. [ ] Ocean and plants absorb CO2.
 1. [ ] Lightbulbs
 1. [ ] Water Use
 1. [ ] Electronics

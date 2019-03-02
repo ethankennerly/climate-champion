@@ -3,12 +3,16 @@
 Based on results of:
 - <https://www.nature.org/en-us/get-involved/how-to-help/consider-your-impact/carbon-calculator/>
 
+Except bus estimated from average with 9 passengers:
+- <https://www.citylab.com/transportation/2012/11/can-we-please-stop-pretending-cars-are-greener-transit/3960/>
+- <https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/PublicTransportationsRoleInRespondingToClimateChange2010.pdf>
+
                         tons/10k miles
         air             4.5
         drive           4.3
         transit         2.3
         transit rail    2.1
-        bus             0.1
+        bus             3 or 4
 
                         tons/$1k
         goods           0.5
@@ -27,6 +31,7 @@ Based on results of:
         heating oil     5.0
         water           3.2
         square foot     0.9
+
 
 # Reference carbon footprints
 
