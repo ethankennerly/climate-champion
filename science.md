@@ -12,7 +12,7 @@ Except bus estimated from average with 9 passengers:
         drive           4.3
         transit         2.3
         transit rail    2.1
-        bus             3 or 4
+        bus             3.5
 
                         tons/$1k
         goods           0.5

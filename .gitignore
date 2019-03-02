@@ -52,3 +52,7 @@ desktop.ini*
 
 # Mac folder settings
 .DS_Store*
+
+# Open Office
+.~lock.*#
+
