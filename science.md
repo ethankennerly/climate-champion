@@ -52,6 +52,23 @@ Diet:
 Other calculations:
 - <https://carbonfund.org/how-we-calculate/>
 
+# Carbon budget
+
+- 770 GtCO2 for 1.5 C
+- 1690 GtCO2 for 2 C
+- 7.7 billion people.
+- 100 tCO2/person for 1.5 C.
+- 200 tCO2/person for 2 C.
+- 40 GtCO2e/year for 3 C.
+- 5 tCO2e/person/year for 3 C.
+
+- <https://www.wri.org/blog/2018/10/according-new-ipcc-report-world-track-exceed-its-carbon-budget-12-years>
+- <https://www.vox.com/energy-and-environment/2018/1/19/16908402/global-warming-2-degrees-climate-change>
+
+
+
+- <https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions>
+
 # Reference carbon footprints
 
 - <https://www.iflscience.com/environment/these-four-lifestyle-changes-will-do-more-to-combat-climate-change-than-anything-else/>

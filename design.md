@@ -99,6 +99,7 @@ Climate Champion simulate and animate choices. Choose. Review:
         1. Represents repopulation once, because two children will replace two parents.
     1. Have Four Children.
 1. Calibrate emission metrics to citations.
+    1. [ ] Calibrate CO2 per capita to raise 4 C.
 1. [ ] Taxes
     1. [ ] United States
     1. [ ] India
