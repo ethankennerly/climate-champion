@@ -12,6 +12,8 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private Vector3 m_OffsetPerSpawn;
         [SerializeField]
+        private bool m_OffsetWorld;
+        [SerializeField]
         private float m_RateOverTime;
 
         [SerializeField]
@@ -55,7 +57,8 @@ namespace FineGameDesign.Utils
             if (m_PrefabToSpawn != null)
             {
                 Quaternion spawnRotation = Quaternion.Euler(0f, 0f, m_RotationToSpawn);
-                Vector3 spawnPosition = transform.position + (m_OffsetPerSpawn * m_NumEmissions);
+                Vector3 spawnPosition = m_OffsetWorld ? Vector3.zero : transform.position;
+                spawnPosition += m_OffsetPerSpawn * m_NumEmissions;
                 Instantiate(m_PrefabToSpawn, spawnPosition, spawnRotation);
             }
 
