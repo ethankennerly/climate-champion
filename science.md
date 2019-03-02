@@ -41,6 +41,14 @@ Nuclear vs coal:
 
 - <https://www.eia.gov/tools/faqs/faq.php?id=97&t=3>
 
+Diet:
+
+                        tons/year
+        US omnivore     2.5
+        US plant-based  1.5
+
+- <http://shrinkthatfootprint.com/food-carbon-footprint-diet>
+
 Other calculations:
 - <https://carbonfund.org/how-we-calculate/>
 

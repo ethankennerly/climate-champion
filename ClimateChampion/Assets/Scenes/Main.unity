@@ -399,6 +399,16 @@ PrefabInstance:
       propertyPath: m_Group
       value: 
       objectReference: {fileID: 4154858702978533359}
+    - target: {fileID: 4058036220265861655, guid: 7381a96cd4ee199408ef0eadcc519f70,
+        type: 3}
+      propertyPath: m_Name
+      value: Buy New $10k Year
+      objectReference: {fileID: 0}
+    - target: {fileID: 4772179805542658595, guid: 7381a96cd4ee199408ef0eadcc519f70,
+        type: 3}
+      propertyPath: m_Name
+      value: Services $10k Year
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381a96cd4ee199408ef0eadcc519f70, type: 3}
 --- !u!1001 &560408526537568986
@@ -408,6 +418,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7522855883971519008, guid: 302f5d92a9031e44c98098eeccc915d4,
+        type: 3}
+      propertyPath: m_Name
+      value: HudCanvas
+      objectReference: {fileID: 0}
     - target: {fileID: 7541935963778799890, guid: 302f5d92a9031e44c98098eeccc915d4,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -417,11 +432,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7522855883971519008, guid: 302f5d92a9031e44c98098eeccc915d4,
-        type: 3}
-      propertyPath: m_Name
-      value: HudCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 6457437665741542906, guid: 302f5d92a9031e44c98098eeccc915d4,
         type: 3}

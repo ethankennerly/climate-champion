@@ -680,7 +680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EmissionType: 2
-  m_Capacity: 100
+  m_Capacity: 400
   m_Quantity: 0
   m_QuantityPerEmission: 1
   m_MeterFill: {fileID: 1496066583384977609}
@@ -962,5 +962,5 @@ MonoBehaviour:
   m_Data:
     whole: 2000
     remainder: 0
-    speed: 4
+    speed: 1
   m_Text: {fileID: 7025050499326161215}

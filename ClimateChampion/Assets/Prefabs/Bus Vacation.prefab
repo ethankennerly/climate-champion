@@ -127,7 +127,7 @@ MonoBehaviour:
     type: 3}
   m_RotationToSpawn: 180
   m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
-  m_RateOverTime: 9
+  m_RateOverTime: 4.5
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 0
