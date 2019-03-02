@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 5426910563766143657}
   - component: {fileID: 7135794559490434692}
   m_Layer: 0
-  m_Name: Carport
+  m_Name: Car Vacation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,7 +126,8 @@ MonoBehaviour:
   m_PrefabToSpawn: {fileID: 3606701458020833850, guid: 1e25457ec22682346a95fe17d2cabfde,
     type: 3}
   m_RotationToSpawn: 180
-  m_RateOverTime: 6
+  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
+  m_RateOverTime: 9
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 0

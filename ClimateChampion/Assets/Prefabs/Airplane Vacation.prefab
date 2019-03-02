@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 7684962533109117170}
   - component: {fileID: 4823730730635402463}
   m_Layer: 0
-  m_Name: Airport
+  m_Name: Airplane Vacation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,7 +126,8 @@ MonoBehaviour:
   m_PrefabToSpawn: {fileID: 5490390011349796546, guid: fc34614f2ad3d084db5c066676d05c13,
     type: 3}
   m_RotationToSpawn: 180
-  m_RateOverTime: 6
+  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
+  m_RateOverTime: 9
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 0
