@@ -87,7 +87,8 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Produces services. Generates CO2 over services produced.
     1. Little.
     1. A lot.
-1. [ ] Align places to an isometric grid.
+1. Align places to an isometric grid.
+1. [ ] Decorate as a town.
 1. Reproduction.
     1. Have Three Or More Children: Doubles every station in 30 years.
         1. Resets to default.
