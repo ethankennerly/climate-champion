@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -49,9 +50,7 @@ namespace FineGameDesign.Utils
             m_Group.Open(this);
             m_SelectedCallout.SetActive(true);
             if (m_SpawnedInstance != null)
-            {
                 m_SpawnedLabel.text = m_SpawnedInstance.name;
-            }
         }
 
         public void Close()
@@ -79,12 +78,27 @@ namespace FineGameDesign.Utils
 
             GameObject nextPrefab = index >= m_OptionsToSpawn.Length ? null : m_OptionsToSpawn[index];
             if (nextPrefab == null)
+            {
+                m_SpawnedLabel.text = "";
                 return;
+            }
 
             m_SpawnedInstance = Instantiate(nextPrefab, transform);
+            m_SpawnedInstance.name = TrimIfEndsWith(m_SpawnedInstance.name, "(Clone)");
+            if (m_SpawnedInstance != null)
+                m_SpawnedLabel.text = m_SpawnedInstance.name;
             emitter = m_SpawnedInstance.GetComponentInChildren<TimedEmitter>();
             if (emitter != null)
                 emitter.RemainingTime = remainingTime;
+        }
+
+        private static string TrimIfEndsWith(string text, string suffix)
+        {
+            int end = text.LastIndexOf(suffix, StringComparison.Ordinal);
+            if (end < 0)
+                return text;
+
+            return text.Substring(0, end);
         }
     }
 }
