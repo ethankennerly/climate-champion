@@ -62,7 +62,6 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Show icon of object to replace with.
     1. [ ] Last toggle group option is help button.
         1. [ ] Clicking help shows modal with text.
-1. [ ] Align places to an isometric grid.
 1. Vacation.
     1. Airplane
     1. Car
@@ -88,6 +87,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Produces services. Generates CO2 over services produced.
     1. Little.
     1. A lot.
+1. [ ] Align places to an isometric grid.
 1. Reproduction.
     1. Have Three Or More Children: Doubles every station in 30 years.
         1. Resets to default.
