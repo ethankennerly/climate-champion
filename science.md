@@ -32,6 +32,17 @@ Except bus estimated from average with 9 passengers:
         water           3.2
         square foot     0.9
 
+Nuclear vs coal:
+- <http://www.world-nuclear.org/nuclear-basics/greenhouse-gas-emissions-avoided.aspx>
+
+                        tons/10KWh
+        coal            888
+        nuclear         29
+
+- <https://www.eia.gov/tools/faqs/faq.php?id=97&t=3>
+
+Other calculations:
+- <https://carbonfund.org/how-we-calculate/>
 
 # Reference carbon footprints
 
