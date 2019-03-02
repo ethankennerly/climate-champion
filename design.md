@@ -89,14 +89,16 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Have Three Or More Children: Doubles every station in 30 years.
         1. Resets to default.
         1. After 80 years, toggler per capita disappears.
+            1. Extract reproduction toggle to toggles per capita.
             1. [ ] Animate disappearance.
+            1. [ ] After last capita disappears, end game.
         1. Position Offsets.
-    1. [ ] No Children.
-    1. [ ] Have One Child.
-    1. [ ] Have Two Children.
-    1. [ ] Have Three Children.
-    1. [ ] Have Four Children.
-1. [ ] Inspect emission metrics.
+        1. [ ] Find empty place for new spawns.
+    1. No Children.
+    1. Have Two Children.
+        1. Represents repopulation once, because two children will replace two parents.
+    1. Have Four Children.
+1. Calibrate emission metrics to citations.
 1. [ ] Taxes
     1. [ ] United States
     1. [ ] India
