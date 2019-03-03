@@ -87,5 +87,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EmissionType: 2
+  m_WinGameRoot: {fileID: 0}
+  m_WinGameTime: 2099
   m_EndGameRoot: {fileID: 0}
+  m_ActiveDuringPlay: {fileID: 0}
   m_DeltaTime: {fileID: 9127344612351240132}
