@@ -69,6 +69,11 @@ Other calculations:
 
 - <https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions>
 
+# Earth
+
+Surface area 200 million square miles
+Land area 60 million square miles
+
 # Reference carbon footprints
 
 - <https://www.iflscience.com/environment/these-four-lifestyle-changes-will-do-more-to-combat-climate-change-than-anything-else/>
