@@ -69,6 +69,12 @@ Other calculations:
 
 - <https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions>
 
+CO2e Per capita in 2013:
+- India 1.5 tons
+- China 6 tons
+- US 17 tons
+- <https://www.energy.gov/articles/interactive-how-much-carbon-do-countries-emit>
+
 # Earth
 
 Surface area 200 million square miles
