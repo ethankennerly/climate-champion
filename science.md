@@ -78,12 +78,17 @@ CO2e Per capita in 2013:
 - US minimum 8.5 tons/year/capita.
 <https://www.sciencedaily.com/releases/2008/04/080428120658.htm>
 
+- I estimate US government average 3 tCO2e/year/capita if budget CO2 efficiency is half that of a citizen consumer purchasing goods.
+- By the same estimation formula, I estimated India's tCO2e/year/capita being about 5 times more efficient than US. That is about 0.6 tCO2e.
+
 - 0.4 tCO2e/year/capita from Federal Government.
 - 2011 federal government 121.3 MtCO2e/year. 54.9 military.
 <https://carbonfund.org/2011/05/02/federal-government-reports-hefty-carbon-footprint/>
 - US population 312 M in 2011.
 <https://www.google.com/publicdata/explore?ds=kf7tgg1uo9ude_&met_y=population&hl=en&dl=en>
 
+- 0.3 - 3 tCO2e/year/capita from municipal government.
+<https://carbonfootprintofnations.com/2010/12/13/the-carbon-footprint-of-municipalities/>
 
 # Earth
 
