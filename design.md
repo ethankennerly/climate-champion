@@ -110,9 +110,10 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. Ocean and plants absorb CO2.
     1. Animate CO2 emitted from meter down to ocean and plants.
         1. Emission subtracts from Carbon Dioxide in Troposphere.
-1. [ ] Taxes
-    1. [ ] United States
-    1. [ ] India
+1. Government
+    1. United States
+    1. India
+1. [ ] Callout behind item.
 1. [ ] Decorate as a town.
 1. [ ] Celebrate reducing CO2.
     1. [ ] With change in CO2 meter, deal shuffled tiles.
