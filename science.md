@@ -71,7 +71,7 @@ Other calculations:
 
 CO2e Per capita in 2013:
 - India 1.5 tons
-- China 6 tons
+- China 6.7 tons
 - US 17 tons
 - <https://www.energy.gov/articles/interactive-how-much-carbon-do-countries-emit>
 

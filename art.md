@@ -1,5 +1,6 @@
 # Art
 Artwork made by others have their own licenses.
+- [Upheaval font](ClimateChampion/Assets/Fonts/upheaval/upheaval.txt)
 - Flag [Bot icons by Johana.cl](johana.cl)
 - <https://opengameart.org/content/rpg-urban-pack>
 - <https://opengameart.org/content/top-down-airplane-renders>

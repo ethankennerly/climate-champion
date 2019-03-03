@@ -113,7 +113,7 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. Government
     1. United States
     1. India
-1. [ ] Callout behind item.
+1. Callout behind item.
 1. [ ] Decorate as a town.
 1. [ ] Celebrate reducing CO2.
     1. [ ] With change in CO2 meter, deal shuffled tiles.
@@ -125,7 +125,7 @@ Climate Champion simulate and animate choices. Choose. Review:
             1. [ ] Bounds
             1. [ ] Current Value
 1. [ ] 8-bit font.
-1. [ ] End screen: carbon footprint in tons.
+1. [ ] End screen: carbon footprint in net tons/year/capita.
 1. [ ] Investments
     1. [ ] Stocks
     1. [ ] Tech Stocks
