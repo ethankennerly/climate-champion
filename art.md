@@ -1,5 +1,6 @@
 # Art
 Artwork made by others have their own licenses.
+- Flag [Bot icons by Johana.cl](johana.cl)
 - <https://opengameart.org/content/rpg-urban-pack>
 - <https://opengameart.org/content/top-down-airplane-renders>
 - <https://opengameart.org/content/airplane-2>

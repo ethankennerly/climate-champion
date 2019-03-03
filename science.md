@@ -75,6 +75,16 @@ CO2e Per capita in 2013:
 - US 17 tons
 - <https://www.energy.gov/articles/interactive-how-much-carbon-do-countries-emit>
 
+- US minimum 8.5 tons/year/capita.
+<https://www.sciencedaily.com/releases/2008/04/080428120658.htm>
+
+- 0.4 tCO2e/year/capita from Federal Government.
+- 2011 federal government 121.3 MtCO2e/year. 54.9 military.
+<https://carbonfund.org/2011/05/02/federal-government-reports-hefty-carbon-footprint/>
+- US population 312 M in 2011.
+<https://www.google.com/publicdata/explore?ds=kf7tgg1uo9ude_&met_y=population&hl=en&dl=en>
+
+
 # Earth
 
 Surface area 200 million square miles

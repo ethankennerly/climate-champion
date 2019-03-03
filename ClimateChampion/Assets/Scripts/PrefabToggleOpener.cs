@@ -33,21 +33,29 @@ namespace FineGameDesign.Utils
 
         [SerializeField]
         private PrefabToggleGroup m_Group;
+        private PrefabToggleGroup Group
+        {
+            get
+            {
+                if (m_Group == null)
+                    m_Group = PrefabToggleGroup.Instance;
+                if (m_Group == null)
+                    Debug.LogWarning("Expected Group was defined.", context: this);
+                return m_Group;
+            }
+        }
 
         private void Start()
         {
             Close();
         }
 
-        private void OnEnable()
-        {
-            if (m_Group == null)
-                m_Group = PrefabToggleGroup.Instance;
-        }
-
         public void Open()
         {
-            m_Group.Open(this);
+            if (Group == null)
+                return;
+
+            Group.Open(this);
             m_SelectedCallout.SetActive(true);
             if (m_SpawnedInstance != null)
                 m_SpawnedLabel.text = m_SpawnedInstance.name;

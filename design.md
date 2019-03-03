@@ -107,9 +107,9 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. Calibrate emission metrics to citations.
     1. Calibrate CO2 per capita to raise 4 C.
 1. Win by surviving until 2099.
-1. [ ] Ocean and plants absorb CO2.
-    1. [ ] Animate CO2 emitted from meter down to ocean and plants.
-        1. [ ] Emission subtracts from Carbon Dioxide in Troposphere.
+1. Ocean and plants absorb CO2.
+    1. Animate CO2 emitted from meter down to ocean and plants.
+        1. Emission subtracts from Carbon Dioxide in Troposphere.
 1. [ ] Taxes
     1. [ ] United States
     1. [ ] India
@@ -123,6 +123,7 @@ Climate Champion simulate and animate choices. Choose. Review:
             1. [ ] Tile Maps
             1. [ ] Bounds
             1. [ ] Current Value
+1. [ ] 8-bit font.
 1. [ ] End screen: carbon footprint in tons.
 1. [ ] Investments
     1. [ ] Stocks
