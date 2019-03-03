@@ -88,7 +88,6 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Little.
     1. A lot.
 1. Align places to an isometric grid.
-1. [ ] Decorate as a town.
 1. Reproduction.
     1. Have Three Or More Children: Doubles every station in 30 years.
         1. Resets to default.
@@ -107,17 +106,36 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Have Four Children.
 1. Calibrate emission metrics to citations.
     1. Calibrate CO2 per capita to raise 4 C.
+1. [ ] Win by surviving until 2099.
+1. [ ] Ocean and plants absorb CO2.
+    1. [ ] Animate CO2 emitted from meter down to ocean and plants.
+        1. [ ] Emission subtracts from Carbon Dioxide in Troposphere.
 1. [ ] Taxes
     1. [ ] United States
     1. [ ] India
+1. [ ] Decorate as a town.
+1. [ ] Celebrate reducing CO2.
+    1. [ ] With change in CO2 meter, deal shuffled tiles.
+        1. [ ] Green grass to yellow sand.
+        1. [ ] Green plants to empty.
+        1. [ ] Green trees to barren trees.
+        1. [ ] Editor:
+            1. [ ] Tile Maps
+            1. [ ] Bounds
+            1. [ ] Current Value
+1. [ ] End screen: carbon footprint in tons.
 1. [ ] Investments
     1. [ ] Stocks
     1. [ ] Tech Stocks
     1. [ ] Industrial Stocks
+1. [ ] Occupation
+    1. [ ] Goods $200K
+    1. [ ] Gooods $20K
+    1. [ ] Services $200K
+    1. [ ] Services $20K
+    1. [ ] Occupation in the town.
 1. [ ] Levels.
-    1. [ ] Win by surviving until 2099.
-1. [ ] Ocean and plants absorb CO2.
-    1. [ ] Animate CO2 emitted from meter down to ocean and plants.
+    1. [ ] Introduce stations at levels.
 1. [ ] Lightbulbs
 1. [ ] Water Use
 1. [ ] Electronics
