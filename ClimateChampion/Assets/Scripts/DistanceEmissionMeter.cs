@@ -8,22 +8,26 @@ namespace FineGameDesign.Utils
     {
         public static event Action<ItemType> OnFull;
 
-        private Action<TravelerData, ItemType> m_Emit;
+        [Serializable]
+        public struct Measurable
+        {
+            public ItemType type;
+            public float change;
+        }
 
         [SerializeField]
-        private ItemType m_EmissionType;
-
-        [SerializeField]
-        private float m_Capacity = 1f;
+        private float m_Capacity = 200f;
 
         [SerializeField]
         private float m_Quantity;
 
         [SerializeField]
-        private float m_QuantityPerEmission = 0.0125f;
+        private Image m_MeterFill;
 
         [SerializeField]
-        private Image m_MeterFill;
+        public Measurable[] m_Measurables;
+
+        private Action<TravelerData, ItemType> m_Emit;
 
         private void OnEnable()
         {
@@ -41,15 +45,28 @@ namespace FineGameDesign.Utils
 
         private void Emit(TravelerData traveler, ItemType emissionType)
         {
-            if (m_EmissionType != emissionType)
+            float change = GetChange(emissionType);
+            if (change == 0f)
                 return;
 
-            m_Quantity += m_QuantityPerEmission;
+            m_Quantity += change;
             if (m_Quantity >= m_Capacity)
                 if (OnFull != null)
-                    OnFull(m_EmissionType);
+                    OnFull(emissionType);
 
             UpdateView();
+        }
+
+        private float GetChange(ItemType emissionType)
+        {
+            foreach (Measurable measurable in m_Measurables)
+            {
+                if (emissionType != measurable.type)
+                    continue;
+
+                return measurable.change;
+            }
+            return 0f;
         }
 
         private void UpdateView()

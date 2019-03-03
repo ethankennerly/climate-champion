@@ -106,7 +106,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Have Four Children.
 1. Calibrate emission metrics to citations.
     1. Calibrate CO2 per capita to raise 4 C.
-1. [ ] Win by surviving until 2099.
+1. Win by surviving until 2099.
 1. [ ] Ocean and plants absorb CO2.
     1. [ ] Animate CO2 emitted from meter down to ocean and plants.
         1. [ ] Emission subtracts from Carbon Dioxide in Troposphere.
