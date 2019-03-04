@@ -114,17 +114,17 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. United States
     1. India
 1. Callout behind item.
-1. [ ] Decorate as a town.
+1. Decorate as a town.
 1. [ ] Celebrate reducing CO2.
     1. [ ] With change in CO2 meter, deal shuffled tiles.
         1. [ ] Green grass to yellow sand.
+        1. [ ] Editor:
+            1. [ ] Map To Edit
+            1. [ ] Lower Bounds, Maps: Hides tile if no map.
+            1. [ ] Current Value
         1. [ ] Green plants to empty.
         1. [ ] Green trees to barren trees.
-        1. [ ] Editor:
-            1. [ ] Tile Maps
-            1. [ ] Bounds
-            1. [ ] Current Value
-1. [ ] 8-bit font.
+1. 8-bit font.
 1. [ ] End screen: carbon footprint in net tons/year/capita.
 1. [ ] Investments
     1. [ ] Stocks
