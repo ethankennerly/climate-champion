@@ -8,6 +8,8 @@ namespace FineGameDesign.Utils
     {
         public static event Action<ItemType> OnFull;
 
+        public event Action<float> OnFillAmountUpdated;
+
         [Serializable]
         public struct Measurable
         {
@@ -71,7 +73,11 @@ namespace FineGameDesign.Utils
 
         private void UpdateView()
         {
-            m_MeterFill.fillAmount = m_Quantity / m_Capacity;
+            float fillAmount = m_Quantity / m_Capacity;
+            m_MeterFill.fillAmount = fillAmount;
+
+            if (OnFillAmountUpdated != null)
+                OnFillAmountUpdated(fillAmount);
         }
     }
 }
