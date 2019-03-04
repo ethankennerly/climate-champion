@@ -23,7 +23,9 @@ namespace FineGameDesign.Utils
             [Header("Hides tile if empty.")]
             public Tilemap map;
 
-            public List<TileBase> tilesToMix;
+            public List<Vector3Int> cellsToMix;
+
+            public int numActive;
         }
 
         [SerializeField]
@@ -62,6 +64,47 @@ namespace FineGameDesign.Utils
         {
             Init();
             m_Mix = nextMix;
+
+            int numInputs = m_MixInputs.Length;
+            if (numInputs == 0)
+                return;
+
+            MixInput lowerInput = m_MixInputs[0];
+            for (int inputIndex = 1; inputIndex < numInputs;
+                lowerInput = m_MixInputs[inputIndex], ++inputIndex
+            )
+            {
+                MixInput input = m_MixInputs[inputIndex];
+                int previousNumActive = input.numActive;
+                int nextNumActive = StableLerp(lowerInput.lowerBound, input.lowerBound, nextMix,
+                    0, input.cellsToMix.Count, previousNumActive);
+                if (nextNumActive == input.numActive)
+                    continue;
+
+                if (nextNumActive > previousNumActive)
+                {
+                    for (int activeIndex = previousNumActive; activeIndex < nextNumActive; ++activeIndex)
+                    {
+                        Vector3Int cell = input.cellsToMix[activeIndex];
+                        SetTile(input, cell);
+                    }
+                }
+                else
+                {
+                    for (int activeIndex = previousNumActive - 1; activeIndex >= nextNumActive; --activeIndex)
+                    {
+                        Vector3Int cell = input.cellsToMix[activeIndex];
+                        SetTile(lowerInput, cell);
+                    }
+                }
+                input.numActive = nextNumActive;
+            }
+        }
+
+        private void SetTile(MixInput input, Vector3Int cell)
+        {
+            TileBase tile = input.map == null ? null : input.map.GetTile(cell);
+            m_MapToEdit.SetTile(cell, tile);
         }
 
         private void Init()
@@ -72,16 +115,16 @@ namespace FineGameDesign.Utils
 
             foreach (MixInput input in m_MixInputs)
             {
-                input.tilesToMix = GetTiles(input.map);
-                Deck.ShuffleList(input.tilesToMix);
+                input.cellsToMix = GetOccupiedCells(input.map);
+                Deck.ShuffleList(input.cellsToMix);
             }
         }
 
-        private List<TileBase> GetTiles(Tilemap map)
+        private List<Vector3Int> GetOccupiedCells(Tilemap map)
         {
-            List<TileBase> tiles = new List<TileBase>();
+            List<Vector3Int> cells = new List<Vector3Int>();
             if (map == null)
-                return tiles;
+                return cells;
 
             BoundsInt bounds = map.cellBounds;
             foreach (Vector3Int cell in bounds.allPositionsWithin)
@@ -89,9 +132,24 @@ namespace FineGameDesign.Utils
                 if (!map.HasTile(cell))
                     continue;
 
-                tiles.Add(map.GetTile(cell));
+                Sprite sprite = map.GetSprite(cell);
+                if (sprite == null)
+                    continue;
+
+                cells.Add(cell);
             }
-            return tiles;
+            return cells;
+        }
+
+        private static int StableLerp(float min, float max, float mix,
+            int minOut, int maxOut, int previousOut)
+        {
+            float t = Mathf.InverseLerp(min, max, mix);
+            float nextOut = Mathf.Lerp(minOut, maxOut, t);
+            float distance = Mathf.Abs(nextOut - previousOut);
+            if (distance < 1f)
+                return previousOut;
+            return (int)Mathf.Round(nextOut);
         }
     }
 }
