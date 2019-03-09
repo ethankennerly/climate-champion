@@ -87,6 +87,52 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Produces services. Generates CO2 over services produced.
     1. Little.
     1. A lot.
+1. [ ] How to play better?
+    1. [ ] How can I survive longer than 2030s?
+    1. [ ] How to make a difference?
+    1. [ ] I give up.
+    1. [ ] What to do to have an effect?
+    1. [ ] Starts too stressful. Maybe start off pre-industrial?
+    1. [ ] Bit chaotic.
+    1. [ ] What is most optimal?
+        1. [ ] Couple travels from home to plot.
+            1. [ ] Hammer animates and radial meter appears.
+            1. [ ] When meter is full, couple brings product home.
+            1. [ ] Couple visits each plot:
+                1. [ ] Commute garage: money
+                1. [ ] Power plant: lightning
+                1. [ ] Shop: box
+                1. [ ] Theater: smile
+                1. [ ] Vacation port: sun
+                1. [ ] Government embassy: red cross
+                1. [ ] Bed: heart
+        1. [ ] Tween emission to current fill of meter.
+1. [ ] Switch children. No effect. What does that change?
+    1. [ ] Is two children and four children do something more?
+    1. [ ] Children duplicated???
+    1. [ ] Why are things duplicated at the end of the year?
+    1. [ ] Why is there another cow?
+        1. [ ] Bed changes meters on 0, 1, or 2, home plots.
+1. [ ] I want to change and look at the rate of the bar change.
+    1. [ ] Animate previous meter location fade.
+1. [ ] What is falling off the CO2 bar? What is the effect?
+    1. [ ] Nothing falls when CO2 meter empty.
+    1. [ ] Animate falling from fill amount.
+1. [ ] Select. Want selection box to go away.
+    1. [ ] Selecting does not dismiss the options.
+1. [ ] Tap away. Want next selection to appear. Have to touch twice.
+    1. [ ] Tap selected. No response.
+1. [ ] What are "services?"
+    1. [ ] Is cheaper worse or better?
+    1. [ ] Rename options:
+        - Shop A Lot
+        - Shop Little
+        - Entertain Frequently
+        - Entertain Rarely
+1. [ ] I hear 2 sounds: pop and squish. I want feedback sound, good or bad.
+1. [ ] Does grass to barren correlate to CO2 bar?
+    1. [ ] Same image on CO2 fill as barren.
+    1. [ ] Same image on CO2 background as grass.
 1. Align places to an isometric grid.
 1. Reproduction.
     1. Have Three Or More Children: Doubles every station in 30 years.
