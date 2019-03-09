@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: PowerPlantToggle
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2270896068365199687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: -0.5, z: 0.03}
+  m_LocalPosition: {x: -3, y: -0.75, z: 0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2514206128392717219}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_RotationToSpawn: 0
   m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
   m_OffsetWorld: 0
-  m_RateOverTime: 9
+  m_RateOverTime: 18
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
@@ -123,7 +123,7 @@ GameObject:
   m_Layer: 0
   m_Name: ShopToggle
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -135,7 +135,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2524176474982109444}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: -1.25, z: 0.01}
+  m_LocalPosition: {x: -3, y: -1.75, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2514206128392717219}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_RotationToSpawn: 0
   m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
   m_OffsetWorld: 0
-  m_RateOverTime: 12
+  m_RateOverTime: 24
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
@@ -175,7 +175,7 @@ GameObject:
   m_Layer: 0
   m_Name: ServicesToggle
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -187,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2524176475165405247}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -1.25, z: 0}
+  m_LocalPosition: {x: -2, y: -1.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2514206128392717219}
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_RotationToSpawn: 0
   m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
   m_OffsetWorld: 0
-  m_RateOverTime: 15
+  m_RateOverTime: 30
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
@@ -227,7 +227,7 @@ GameObject:
   m_Layer: 0
   m_Name: DietToggle
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_RotationToSpawn: 0
   m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
   m_OffsetWorld: 0
-  m_RateOverTime: 6
+  m_RateOverTime: 12
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
@@ -279,7 +279,7 @@ GameObject:
   m_Layer: 0
   m_Name: GovernmentToggle
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_RotationToSpawn: 0
   m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
   m_OffsetWorld: 0
-  m_RateOverTime: 21
+  m_RateOverTime: 42
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
@@ -331,7 +331,7 @@ GameObject:
   m_Layer: 0
   m_Name: CommuteToggle
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -343,7 +343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4369409905838179951}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 1, z: 0.07}
+  m_LocalPosition: {x: -3, y: 1.25, z: 0.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2514206128392717219}
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_RotationToSpawn: 0
   m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
   m_OffsetWorld: 0
-  m_RateOverTime: 3
+  m_RateOverTime: 6
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
@@ -383,7 +383,7 @@ GameObject:
   m_Layer: 0
   m_Name: ReproductionToggle
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -395,7 +395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6064518334335344424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 1, z: 0.06}
+  m_LocalPosition: {x: -2, y: 1.25, z: 0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2514206128392717219}
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_RotationToSpawn: 0
   m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
   m_OffsetWorld: 0
-  m_RateOverTime: 24
+  m_RateOverTime: 48
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
@@ -435,7 +435,7 @@ GameObject:
   m_Layer: 0
   m_Name: VacationToggle
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -447,7 +447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6423725114362655283}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -0.5, z: 0.02}
+  m_LocalPosition: {x: -2, y: -0.75, z: 0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2514206128392717219}
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_RotationToSpawn: 0
   m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
   m_OffsetWorld: 0
-  m_RateOverTime: 18
+  m_RateOverTime: 36
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
