@@ -348,6 +348,11 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 20590555378689158, guid: 453d0b39ca46b134a93eb21745fd4591,
+        type: 3}
+      propertyPath: orthographic size
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 453d0b39ca46b134a93eb21745fd4591, type: 3}
 --- !u!1001 &1587307634
@@ -1631,6 +1636,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757398222220140432, guid: 9e348366e7ad7814c9a425424cd03cf4,
+        type: 3}
+      propertyPath: m_ChunkCullingBounds.x
+      value: 0.012499988
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757398222220140432, guid: 9e348366e7ad7814c9a425424cd03cf4,
+        type: 3}
+      propertyPath: m_ChunkCullingBounds.y
+      value: 0.012499988
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e348366e7ad7814c9a425424cd03cf4, type: 3}
