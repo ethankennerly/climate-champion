@@ -96,7 +96,9 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Bit chaotic.
     1. [ ] What is most optimal?
         1. [ ] Why is there a duplicate government?
-            1. [ ] Three islands, with land bridge.
+            1. Three islands, with land bridge.
+            1. Remove downward CO2 traveler.
+            1. [ ] Car commute on land.
             1. [ ] Couple travels from left off screen to center of first island.
             1. [ ] First couple on first island.
             1. [ ] Stations tween from the couple.
