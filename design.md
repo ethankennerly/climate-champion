@@ -95,6 +95,13 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Starts too stressful. Maybe start off pre-industrial?
     1. [ ] Bit chaotic.
     1. [ ] What is most optimal?
+        1. [ ] Why is there a duplicate government?
+            1. [ ] Three islands, with land bridge.
+            1. [ ] Couple travels from left off screen to center of first island.
+            1. [ ] First couple on first island.
+            1. [ ] Stations tween from the couple.
+            1. [ ] Bed of next couple on right side.
+            1. [ ] Next couple travel to next island.
         1. [ ] Start meter fill in middle.
         1. [ ] Couple travels from home to plot.
             1. [ ] Hammer animates and radial meter appears.
@@ -127,13 +134,6 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Selecting does not dismiss the options.
 1. [ ] Tap away. Want next selection to appear. Have to touch twice.
     1. [ ] Tap selected. No response.
-1. [ ] Why is there a duplicate government?
-    1. [ ] Three islands, with land bridge.
-    1. [ ] Couple travels from left off screen to center of first island.
-    1. [ ] First couple on first island.
-    1. [ ] Stations tween from the couple.
-    1. [ ] Bed of next couple on right side.
-    1. [ ] Next couple travel to next island.
 1. [ ] What are "services?"
     1. [ ] Is cheaper worse or better?
     1. [ ] Don't have money?
