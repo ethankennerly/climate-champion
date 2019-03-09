@@ -95,6 +95,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Starts too stressful. Maybe start off pre-industrial?
     1. [ ] Bit chaotic.
     1. [ ] What is most optimal?
+        1. [ ] Start meter fill in middle.
         1. [ ] Couple travels from home to plot.
             1. [ ] Hammer animates and radial meter appears.
             1. [ ] When meter is full, couple brings product home.
@@ -106,13 +107,17 @@ Climate Champion simulate and animate choices. Choose. Review:
                 1. [ ] Vacation port: sun
                 1. [ ] Government embassy: red cross
                 1. [ ] Bed: heart
+        1. [ ] Airplane flies more frequently, shorter distance.
         1. [ ] Tween emission to current fill of meter.
+        1. [ ] While meter appears, can switch option.
 1. [ ] Switch children. No effect. What does that change?
     1. [ ] Is two children and four children do something more?
     1. [ ] Children duplicated???
     1. [ ] Why are things duplicated at the end of the year?
     1. [ ] Why is there another cow?
         1. [ ] Bed changes meters on 0, 1, or 2, home plots.
+        1. [ ] Next couple has different character images.
+        1. [ ] Hammer meter appears on all locations to be built.
 1. [ ] I want to change and look at the rate of the bar change.
     1. [ ] Animate previous meter location fade.
 1. [ ] What is falling off the CO2 bar? What is the effect?
@@ -122,14 +127,23 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Selecting does not dismiss the options.
 1. [ ] Tap away. Want next selection to appear. Have to touch twice.
     1. [ ] Tap selected. No response.
+1. [ ] Why is there a duplicate government?
+    1. [ ] Three islands, with land bridge.
+    1. [ ] Couple travels from left off screen to center of first island.
+    1. [ ] First couple on first island.
+    1. [ ] Stations tween from the couple.
+    1. [ ] Bed of next couple on right side.
+    1. [ ] Next couple travel to next island.
 1. [ ] What are "services?"
     1. [ ] Is cheaper worse or better?
-    1. [ ] Rename options:
+    1. [ ] Don't have money?
+    1. [ ] Rename options to omit quantity:
         - Shop A Lot
         - Shop Little
         - Entertain Frequently
         - Entertain Rarely
 1. [ ] I hear 2 sounds: pop and squish. I want feedback sound, good or bad.
+    1. [ ] Hear only pop portion of sound.
 1. [ ] Does grass to barren correlate to CO2 bar?
     1. [ ] Same image on CO2 fill as barren.
     1. [ ] Same image on CO2 background as grass.
