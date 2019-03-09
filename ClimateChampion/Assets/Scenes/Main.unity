@@ -1061,7 +1061,7 @@ PrefabInstance:
     - target: {fileID: 261259253206146611, guid: af9c3a1ba17bb1f4e8b57824ac99f79a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3628719468826733033, guid: af9c3a1ba17bb1f4e8b57824ac99f79a,
         type: 3}
@@ -1503,6 +1503,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EndCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468142062638354113, guid: 40a1e1b75ed05d747bada656668e81f8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6223916869714360603, guid: 40a1e1b75ed05d747bada656668e81f8,
         type: 3}

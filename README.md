@@ -7,6 +7,7 @@ Play now on [WebGL or Android](http://finegamedesign.com/climatechampion)
 - [Audio](audio.md)
 - [Design](design.md)
 - [Engineering](engineering.md)
+- [Playtesting](playtesting.md)
 - [Science](science.md)
 
 Artwork and audio were made by others and have their own licenses.
