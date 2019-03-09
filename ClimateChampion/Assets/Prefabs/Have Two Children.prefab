@@ -203,10 +203,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PrefabToSpawn: {fileID: 2303494335279534078, guid: 7381a96cd4ee199408ef0eadcc519f70,
+  m_PrefabToSpawn: {fileID: 2303494335279534078, guid: 38fa4b01047dccc40bbde1109fb68d8e,
     type: 3}
   m_RotationToSpawn: 0
-  m_OffsetPerSpawn: {x: 0.5, y: -0.25, z: -0.125}
+  m_OffsetPerSpawn: {x: 3, y: 0, z: -0.125}
   m_OffsetWorld: 1
   m_RateOverTime: 15
   m_RemainingTime: 0
