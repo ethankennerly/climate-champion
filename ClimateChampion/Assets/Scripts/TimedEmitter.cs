@@ -29,11 +29,11 @@ namespace FineGameDesign.Utils
         }
 
         [SerializeField]
-        private float m_RemainingTime;
-        public float RemainingTime
+        private float m_AccumulatedTime;
+        public float AccumulatedTime
         {
-            get { return m_RemainingTime; }
-            set { m_RemainingTime = value; }
+            get { return m_AccumulatedTime; }
+            set { m_AccumulatedTime = value; }
         }
 
         [SerializeField]
@@ -62,12 +62,12 @@ namespace FineGameDesign.Utils
 
         private void UpdateEmission(float deltaTime)
         {
-            m_RemainingTime += deltaTime;
+            m_AccumulatedTime += deltaTime;
             UpdateFill();
-            if (m_RateOverTime > m_RemainingTime)
+            if (m_RateOverTime > m_AccumulatedTime)
                 return;
 
-            m_RemainingTime -= m_RateOverTime;
+            m_AccumulatedTime -= m_RateOverTime;
             m_NumEmissions++;
 
             if (m_PrefabToSpawn != null)
@@ -90,7 +90,7 @@ namespace FineGameDesign.Utils
 
             float progress = m_RateOverTime == 0f ?
                 1f :
-                (m_RateOverTime - m_RemainingTime) / m_RateOverTime;
+                m_AccumulatedTime / m_RateOverTime;
             progress = Mathf.Clamp01(progress);
             m_FillImage.fillAmount = progress;
         }

@@ -73,13 +73,13 @@ namespace FineGameDesign.Utils
                 return;
 
             m_SelectedIndex = index;
-            float remainingTime = 0f;
+            float accumulatedTime = 0f;
             TimedEmitter emitter;
             if (m_SpawnedInstance != null)
             {
                 emitter = m_SpawnedInstance.GetComponentInChildren<TimedEmitter>();
                 if (emitter != null)
-                    remainingTime = emitter.RemainingTime;
+                    accumulatedTime = emitter.AccumulatedTime;
 
                 Destroy(m_SpawnedInstance);
             }
@@ -97,7 +97,7 @@ namespace FineGameDesign.Utils
                 m_SpawnedLabel.text = m_SpawnedInstance.name;
             emitter = m_SpawnedInstance.GetComponentInChildren<TimedEmitter>();
             if (emitter != null)
-                emitter.RemainingTime = remainingTime;
+                emitter.AccumulatedTime = accumulatedTime;
         }
 
         private static string TrimIfEndsWith(string text, string suffix)

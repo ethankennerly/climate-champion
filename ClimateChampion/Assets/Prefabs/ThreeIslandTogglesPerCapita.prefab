@@ -180,7 +180,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2250299597589045049}
-  - component: {fileID: 676183878307559525}
   m_Layer: 0
   m_Name: PowerPlantToggle
   m_TagString: Untagged
@@ -202,28 +201,6 @@ Transform:
   m_Father: {fileID: 2514206128392717219}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &676183878307559525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2270896068365199687}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PrefabToSpawn: {fileID: 2852155479217088180, guid: 45c4d7210b80ab4438b94daedc1b8eff,
-    type: 3}
-  m_RotationToSpawn: 0
-  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
-  m_OffsetWorld: 0
-  m_RateOverTime: 18
-  m_RemainingTime: 0
-  m_NumEmissions: 0
-  m_NumEmissionsToDestroyEmitter: 1
-  m_FillImage: {fileID: 0}
 --- !u!1 &2303494335279534078
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +301,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2575726245563475834}
-  - component: {fileID: 2746507464364866084}
   m_Layer: 0
   m_Name: ShopToggle
   m_TagString: Untagged
@@ -346,28 +322,6 @@ Transform:
   m_Father: {fileID: 2514206128392717219}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2746507464364866084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2524176474982109444}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PrefabToSpawn: {fileID: 2852155479217088180, guid: 06621caa704761742a0f0a5345a8824c,
-    type: 3}
-  m_RotationToSpawn: 0
-  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
-  m_OffsetWorld: 0
-  m_RateOverTime: 24
-  m_RemainingTime: 0
-  m_NumEmissions: 0
-  m_NumEmissionsToDestroyEmitter: 1
-  m_FillImage: {fileID: 0}
 --- !u!1 &2524176475165405247
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +331,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2575726245344134721}
-  - component: {fileID: 7885779889707500075}
   m_Layer: 0
   m_Name: ServicesToggle
   m_TagString: Untagged
@@ -399,28 +352,6 @@ Transform:
   m_Father: {fileID: 2514206128392717219}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7885779889707500075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2524176475165405247}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PrefabToSpawn: {fileID: 2852155479217088180, guid: 96e1d8d3651fc9742ad73a3fe4d1129e,
-    type: 3}
-  m_RotationToSpawn: 0
-  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
-  m_OffsetWorld: 0
-  m_RateOverTime: 30
-  m_RemainingTime: 0
-  m_NumEmissions: 0
-  m_NumEmissionsToDestroyEmitter: 1
-  m_FillImage: {fileID: 0}
 --- !u!1 &2524176475325521890
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +361,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2575726245252573596}
-  - component: {fileID: 6018915756224383709}
   m_Layer: 0
   m_Name: DietToggle
   m_TagString: Untagged
@@ -452,28 +382,6 @@ Transform:
   m_Father: {fileID: 2514206128392717219}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6018915756224383709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2524176475325521890}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PrefabToSpawn: {fileID: 2852155479217088180, guid: 40cdb74342aebd045bf909dd263b24f2,
-    type: 3}
-  m_RotationToSpawn: 0
-  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
-  m_OffsetWorld: 0
-  m_RateOverTime: 12
-  m_RemainingTime: 0
-  m_NumEmissions: 0
-  m_NumEmissionsToDestroyEmitter: 1
-  m_FillImage: {fileID: 0}
 --- !u!1 &2719089873399554946
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,7 +391,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2667636947888199164}
-  - component: {fileID: 8669838143565669889}
   m_Layer: 0
   m_Name: GovernmentToggle
   m_TagString: Untagged
@@ -505,28 +412,6 @@ Transform:
   m_Father: {fileID: 2514206128392717219}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8669838143565669889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2719089873399554946}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PrefabToSpawn: {fileID: 2852155479217088180, guid: a8ed5c6b7fe7a1d4d88a76ba50272d42,
-    type: 3}
-  m_RotationToSpawn: 0
-  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
-  m_OffsetWorld: 0
-  m_RateOverTime: 42
-  m_RemainingTime: 0
-  m_NumEmissions: 0
-  m_NumEmissionsToDestroyEmitter: 1
-  m_FillImage: {fileID: 0}
 --- !u!1 &3475309966522457480
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,7 +500,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4330843631331848209}
-  - component: {fileID: 3251342170981125086}
   m_Layer: 0
   m_Name: CommuteToggle
   m_TagString: Untagged
@@ -637,28 +521,6 @@ Transform:
   m_Father: {fileID: 2514206128392717219}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3251342170981125086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4369409905838179951}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PrefabToSpawn: {fileID: 4048747358933809876, guid: 81a444bc74f4d484ea4234ae220cf3c7,
-    type: 3}
-  m_RotationToSpawn: 0
-  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
-  m_OffsetWorld: 0
-  m_RateOverTime: 6
-  m_RemainingTime: 0
-  m_NumEmissions: 0
-  m_NumEmissionsToDestroyEmitter: 1
-  m_FillImage: {fileID: 0}
 --- !u!1 &6064518334335344424
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +530,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6093373825341466966}
-  - component: {fileID: 879921225287746737}
   m_Layer: 0
   m_Name: ReproductionToggle
   m_TagString: Untagged
@@ -690,28 +551,6 @@ Transform:
   m_Father: {fileID: 2514206128392717219}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &879921225287746737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6064518334335344424}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PrefabToSpawn: {fileID: 2852155479217088180, guid: e456552b1abbd7141a23dd2ccc3f5163,
-    type: 3}
-  m_RotationToSpawn: 0
-  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
-  m_OffsetWorld: 0
-  m_RateOverTime: 48
-  m_RemainingTime: 0
-  m_NumEmissions: 0
-  m_NumEmissionsToDestroyEmitter: 1
-  m_FillImage: {fileID: 0}
 --- !u!1 &6423725114362655283
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +560,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6457277359892825165}
-  - component: {fileID: 1806901762967916475}
   m_Layer: 0
   m_Name: VacationToggle
   m_TagString: Untagged
@@ -743,25 +581,3 @@ Transform:
   m_Father: {fileID: 2514206128392717219}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1806901762967916475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6423725114362655283}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PrefabToSpawn: {fileID: 4048747358933809876, guid: adf9504f2f9cc1b4a86e2c12aa4c8069,
-    type: 3}
-  m_RotationToSpawn: 0
-  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
-  m_OffsetWorld: 0
-  m_RateOverTime: 36
-  m_RemainingTime: 0
-  m_NumEmissions: 0
-  m_NumEmissionsToDestroyEmitter: 1
-  m_FillImage: {fileID: 0}
