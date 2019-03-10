@@ -21,11 +21,12 @@
 # TODO
 
 - Traveler Scheduler
-    - Calculates rotation, speed to arrive at destination object after duration.
-        - If destination is prefab, find prefab instance.
+    - Calculates rotation, speed to arrive at destination after duration.
 - Traveler
 - Meter
-    - Get Fill Position
+    - Set Fill Position In World
+    - Subscribes to emission enabled on traveler.
+        - Schedules traveler to arrive at fill position after a duration.
 - Pool carbon emission
 
 # Postmortem
