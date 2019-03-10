@@ -128,8 +128,8 @@ Climate Champion simulate and animate choices. Choose. Review:
                 1. [ ] Bed: heart
         1. [ ] While meter appears, can switch option.
         1. [ ] Airplane flies more frequently, shorter distance.
-1. [ ] Switch children. No effect. What does that change?
-    1. [ ] Is two children and four children do something more?
+1. Switch children. No effect. What does that change?
+    1. Is two children and four children do something more?
         1. Timer on children.
         1. Four children.
             1. Two settle next island.
@@ -137,6 +137,7 @@ Climate Champion simulate and animate choices. Choose. Review:
         1. Next couple has different character images.
 1. What is falling off the CO2 bar? What is the effect?
     1. Nothing falls when CO2 meter empty.
+1. Bicycle commute right side up.
 1. [ ] Select. Want selection box to go away.
     1. [ ] Selecting does not dismiss the options.
 1. [ ] Tap away. Want next selection to appear. Have to touch twice.
