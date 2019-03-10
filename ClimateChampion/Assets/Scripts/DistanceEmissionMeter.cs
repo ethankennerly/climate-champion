@@ -29,6 +29,10 @@ namespace FineGameDesign.Utils
         [SerializeField]
         public Measurable[] m_Measurables;
 
+        [Header("Optional.")]
+        [SerializeField]
+        public Lerper m_Lerper;
+
         private Action<TravelerData, ItemType> m_Emit;
         private Action<Emission> m_OnEmissionEnabled;
 
@@ -82,6 +86,9 @@ namespace FineGameDesign.Utils
             float fillAmount = m_Quantity / m_Capacity;
             m_MeterFill.fillAmount = fillAmount;
 
+            if (m_Lerper != null)
+                m_Lerper.Interpolate(fillAmount);
+
             if (OnFillAmountUpdated != null)
                 OnFillAmountUpdated(fillAmount);
         }
@@ -92,8 +99,8 @@ namespace FineGameDesign.Utils
             if (change == 0f)
                 return;
 
-
-            TravelerView.SetDestination(emission.gameObject, transform.position);
+            Vector2 destination = m_Lerper == null ? transform.position : m_Lerper.transform.position;
+            TravelerView.SetDestination(emission.gameObject, destination);
         }
     }
 }
