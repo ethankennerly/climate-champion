@@ -16,13 +16,11 @@ namespace FineGameDesign.Utils
 
         private Action<TravelerData> m_OnPositionChanged;
 
+        private bool m_Initialized;
+
         private void OnEnable()
         {
-            m_Data.position = transform.position;
-
-            UpdateRotation(m_Data.rotation);
-
-            UpdatePosition(m_Data);
+            Init();
             if (m_OnPositionChanged == null)
                 m_OnPositionChanged = UpdatePosition;
 
@@ -36,6 +34,17 @@ namespace FineGameDesign.Utils
             if (MoveForwardSystem.InstanceExists())
                 MoveForwardSystem.Instance.OnDisable(m_Data);
             MoveForwardSystem.OnPositionChanged -= m_OnPositionChanged;
+        }
+
+        public void Init()
+        {
+            if (m_Initialized)
+                return;
+
+            m_Initialized = true;
+            m_Data.position = transform.position;
+            UpdateRotation(m_Data.rotation);
+            UpdatePosition(m_Data);
         }
 
         private void UpdatePosition(TravelerData traveler)
@@ -53,15 +62,6 @@ namespace FineGameDesign.Utils
             transform.eulerAngles = new Vector3(0f, 0f, degrees);
         }
 
-        public static bool TrySetDestination(GameObject travelerObject, Transform destination)
-        {
-            if (destination == null)
-                return false;
-
-            SetDestination(travelerObject, destination.position);
-            return true;
-        }
-
         /// <returns>
         /// Estimated remaining time until arrival.
         /// </returns>
@@ -71,7 +71,13 @@ namespace FineGameDesign.Utils
             if (view == null)
                 return 0f;
 
-            TravelerData traveler = view.Data;
+            return SetDestination(view.Data, destination);
+        }
+
+        public static float SetDestination(TravelerData traveler, Vector2 destination)
+        {
+            traveler.hasDestination = true;
+            traveler.destination = destination;
             Vector2 offset = destination - traveler.position;
             float distance = offset.magnitude;
             if (distance == 0f)

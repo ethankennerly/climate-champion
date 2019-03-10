@@ -25,7 +25,51 @@ namespace FineGameDesign.Utils
         [Header("Emits package at each waypoint.")]
         [SerializeField]
         private Site[] m_Path;
+        private int m_PathIndex;
 
+        private Action<TravelerData> m_OnArrived;
 
+        private void OnEnable()
+        {
+            if (m_OnArrived == null)
+                m_OnArrived = EmitPackage;
+
+            MoveForwardSystem.OnArrived -= m_OnArrived;
+            MoveForwardSystem.OnArrived += m_OnArrived;
+
+            m_Traveler.Init();
+            SetDestination(m_PathIndex);
+        }
+
+        private void OnDisable()
+        {
+            MoveForwardSystem.OnArrived -= m_OnArrived;
+        }
+
+        private void EmitPackage(TravelerData traveler)
+        {
+            if (traveler != m_Traveler.Data)
+                return;
+
+            GameObject package = (GameObject)Instantiate(m_TimedEmitterPackage.gameObject,
+                traveler.position, Quaternion.identity);
+            TimedEmitter emitterInPackage = package.GetComponent<TimedEmitter>();
+            Site site = m_Path[m_PathIndex];
+            emitterInPackage.PrefabToSpawn = site.packageContent;
+
+            SetDestination(++m_PathIndex);
+        }
+
+        private void SetDestination(int pathIndex)
+        {
+            if (pathIndex >= m_Path.Length)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            Site site = m_Path[pathIndex];
+            TravelerView.SetDestination(m_Traveler.Data, site.waypoint.position);
+        }
     }
 }

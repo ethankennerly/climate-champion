@@ -10,5 +10,7 @@ namespace FineGameDesign.Utils
         public float speed;
         public Vector2 position;
         public float deltaDistance;
+        public bool hasDestination;
+        public Vector2 destination;
     }
 }

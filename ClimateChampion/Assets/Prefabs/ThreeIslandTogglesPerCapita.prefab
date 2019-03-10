@@ -89,7 +89,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5100823756557791161}
   - component: {fileID: 6163655711858936652}
-  - component: {fileID: 8745106792785772062}
   - component: {fileID: 105313788676218099}
   m_Layer: 0
   m_Name: Settler
@@ -130,26 +129,8 @@ MonoBehaviour:
     speed: 0.33333334
     position: {x: 0, y: 0}
     deltaDistance: 0
---- !u!114 &8745106792785772062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726520618979246920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PrefabToSpawn: {fileID: 0}
-  m_RotationToSpawn: 0
-  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
-  m_OffsetWorld: 0
-  m_RateOverTime: 6
-  m_RemainingTime: 0
-  m_NumEmissions: 0
-  m_NumEmissionsToDestroyEmitter: 1
+    hasDestination: 0
+    destination: {x: 0, y: 0}
 --- !u!114 &105313788676218099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,7 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Traveler: {fileID: 6163655711858936652}
-  m_TimedEmitterPackage: {fileID: 0}
+  m_TimedEmitterPackage: {fileID: 4045095900361458913, guid: b72e1ef7ef879564dbd08769a1653e78,
+    type: 3}
   m_Path:
   - waypoint: {fileID: 4330843631331848209}
     packageContent: {fileID: 4048747358933809876, guid: 81a444bc74f4d484ea4234ae220cf3c7,
@@ -227,7 +209,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2270896068365199687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
   m_Name: 
@@ -241,6 +223,7 @@ MonoBehaviour:
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
+  m_FillImage: {fileID: 0}
 --- !u!1 &2303494335279534078
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +353,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2524176474982109444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
   m_Name: 
@@ -384,6 +367,7 @@ MonoBehaviour:
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
+  m_FillImage: {fileID: 0}
 --- !u!1 &2524176475165405247
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,7 +406,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2524176475165405247}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
   m_Name: 
@@ -436,6 +420,7 @@ MonoBehaviour:
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
+  m_FillImage: {fileID: 0}
 --- !u!1 &2524176475325521890
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +459,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2524176475325521890}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
   m_Name: 
@@ -488,6 +473,7 @@ MonoBehaviour:
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
+  m_FillImage: {fileID: 0}
 --- !u!1 &2719089873399554946
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +512,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2719089873399554946}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
   m_Name: 
@@ -540,6 +526,7 @@ MonoBehaviour:
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
+  m_FillImage: {fileID: 0}
 --- !u!1 &3475309966522457480
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,7 +644,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4369409905838179951}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
   m_Name: 
@@ -671,6 +658,7 @@ MonoBehaviour:
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
+  m_FillImage: {fileID: 0}
 --- !u!1 &6064518334335344424
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,7 +697,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6064518334335344424}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
   m_Name: 
@@ -723,6 +711,7 @@ MonoBehaviour:
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
+  m_FillImage: {fileID: 0}
 --- !u!1 &6423725114362655283
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,7 +750,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6423725114362655283}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
   m_Name: 
@@ -775,3 +764,4 @@ MonoBehaviour:
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
+  m_FillImage: {fileID: 0}

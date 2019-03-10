@@ -7,6 +7,7 @@ namespace FineGameDesign.Utils
     public sealed class MoveForwardSystem : ASingleton<MoveForwardSystem>
     {
         public static event Action<TravelerData> OnPositionChanged;
+        public static event Action<TravelerData> OnArrived;
 
         private readonly List<TravelerData> m_Travelers = new List<TravelerData>();
         private readonly List<TravelerData> m_AddTravelers = new List<TravelerData>();
@@ -72,9 +73,25 @@ namespace FineGameDesign.Utils
                 Vector2 direction = Vector2Utils.DegreeToVector2(traveler.rotation);
                 traveler.position += direction * traveler.deltaDistance;
 
+                if (traveler.hasDestination)
+                    UpdateDestination(traveler);
+
                 if (OnPositionChanged != null)
                     OnPositionChanged(traveler);
             }
+        }
+
+        private static void UpdateDestination(TravelerData traveler)
+        {
+            Vector2 offset = traveler.destination - traveler.position;
+            if (offset.magnitude > traveler.deltaDistance)
+                return;
+
+            traveler.position = traveler.destination;
+            traveler.hasDestination = false;
+
+            if (OnArrived != null)
+                OnArrived(traveler);
         }
     }
 }

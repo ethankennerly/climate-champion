@@ -8,6 +8,12 @@ namespace FineGameDesign.Utils
     {
         [SerializeField]
         private GameObject m_PrefabToSpawn;
+        public GameObject PrefabToSpawn
+        {
+            get { return m_PrefabToSpawn; }
+            set { m_PrefabToSpawn = value; }
+        }
+
         [SerializeField]
         private float m_RotationToSpawn;
         [SerializeField]
