@@ -131,6 +131,7 @@ Climate Champion simulate and animate choices. Choose. Review:
         1. [ ] Bed changes meters on 0, 1, or 2, home plots.
         1. [ ] Next couple has different character images.
         1. [ ] Hammer meter appears on all locations to be built.
+        1. [ ] Timer.
 1. [ ] I want to change and look at the rate of the bar change.
     1. [ ] Animate previous meter location fade.
 1. [ ] What is falling off the CO2 bar? What is the effect?
@@ -150,9 +151,9 @@ Climate Champion simulate and animate choices. Choose. Review:
         - Entertain Rarely
 1. [ ] I hear 2 sounds: pop and squish. I want feedback sound, good or bad.
     1. [ ] Hear only pop portion of sound.
-1. [ ] Does grass to barren correlate to CO2 bar?
-    1. [ ] Same image on CO2 fill as barren.
-    1. [ ] Same image on CO2 background as grass.
+1. Does grass to barren correlate to CO2 bar?
+    1. Same color on CO2 fill as barren.
+    1. Same color on CO2 background as grass.
 1. Align places to an isometric grid.
 1. Reproduction.
     1. Have Three Or More Children: Doubles every place in 30 years.

@@ -3,6 +3,8 @@
 - Delta Time System
 - Text Timer View
 - Traveler
+    - Traveler Scheduler
+        - Calculates rotation, speed to arrive at destination after duration.
 - Distance Emitter
     - Type
     - Rate Over Distance
@@ -17,17 +19,14 @@
 - Prefab Toggle Group
     - Prefab Toggle Opener
     - Toggles
-
-# TODO
-
-- Traveler Scheduler
-    - Calculates rotation, speed to arrive at destination after duration.
-- Traveler
 - Meter
     - Set Fill Position In World
         - Interpolates position between begin position and end position by fill amount.
     - Subscribes to emission enabled on traveler.
         - Schedules traveler to arrive at fill position after a duration.
+
+# TODO
+
 - Pool carbon emission
 
 # Postmortem
