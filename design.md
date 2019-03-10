@@ -107,7 +107,8 @@ Climate Champion simulate and animate choices. Choose. Review:
                 1. [ ] If four children, travel from first to next island.
             1. First couple on first island.
             1. [ ] Stations tween from the couple.
-        1. [ ] Start meter fill in middle.
+        1. Start meter fill in middle.
+        1. [ ] Tween emission to current fill of meter.
         1. [ ] Couple travels from home to plot.
             1. [ ] Hammer animates and radial meter appears.
             1. [ ] When meter is full, couple brings product home.
@@ -119,9 +120,8 @@ Climate Champion simulate and animate choices. Choose. Review:
                 1. [ ] Vacation port: sun
                 1. [ ] Government embassy: red cross
                 1. [ ] Bed: heart
-        1. [ ] Airplane flies more frequently, shorter distance.
-        1. [ ] Tween emission to current fill of meter.
         1. [ ] While meter appears, can switch option.
+        1. [ ] Airplane flies more frequently, shorter distance.
 1. [ ] Switch children. No effect. What does that change?
     1. [ ] Is two children and four children do something more?
     1. [ ] Children duplicated???

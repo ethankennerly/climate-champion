@@ -20,6 +20,12 @@
 
 # TODO
 
+- Traveler Scheduler
+    - Calculates rotation, speed to arrive at destination object after duration.
+        - If destination is prefab, find prefab instance.
+- Traveler
+- Meter
+    - Get Fill Position
 - Pool carbon emission
 
 # Postmortem
