@@ -138,9 +138,10 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. What is falling off the CO2 bar? What is the effect?
     1. Nothing falls when CO2 meter empty.
 1. Bicycle commute right side up.
-1. [ ] Select. Want selection box to go away.
-    1. [ ] Noted selecting does not dismiss the options.
-        1. [ ] Selecting closes the options.
+1. Select. Want selection box to go away.
+    1. Noted selecting does not dismiss the options.
+        1. Selecting closes the options.
+        1. [ ] prefab toggle button selection tap area not taller than image.
 1. [ ] Tap away. Want next selection to appear. Have to touch twice.
     1. [ ] Tap selected. No response.
         1. [ ] Tap another, immediately brings up that toggle.
