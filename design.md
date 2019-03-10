@@ -101,12 +101,12 @@ Climate Champion simulate and animate choices. Choose. Review:
             1. Car commute on land.
             1. Airplane travel up right screen.
             1. Couple travels from left off screen to center of first island.
+            1. Bed of next couple on right side.
             1. [ ] Couple tweens to next place.
             1. Next couple travel to next island.
                 1. [ ] If four children, travel from first to next island.
-            1. [ ] First couple on first island.
+            1. First couple on first island.
             1. [ ] Stations tween from the couple.
-            1. [ ] Bed of next couple on right side.
         1. [ ] Start meter fill in middle.
         1. [ ] Couple travels from home to plot.
             1. [ ] Hammer animates and radial meter appears.

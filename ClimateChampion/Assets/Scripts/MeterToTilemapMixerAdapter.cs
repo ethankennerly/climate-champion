@@ -21,6 +21,7 @@ namespace FineGameDesign.Utils
 
             m_Meter.OnFillAmountUpdated -= m_OnFillAmountUpdated;
             m_Meter.OnFillAmountUpdated += m_OnFillAmountUpdated;
+            m_Meter.UpdateView();
         }
 
         private void OnDisable()

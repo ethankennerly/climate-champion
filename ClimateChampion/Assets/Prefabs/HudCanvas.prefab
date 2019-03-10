@@ -757,8 +757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb5e0bc015d25144b6b2a77f89dd50f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Capacity: 200
-  m_Quantity: 0
+  m_Capacity: 400
+  m_Quantity: 200
   m_MeterFill: {fileID: 1496066583384977609}
   m_Measurables:
   - type: 2

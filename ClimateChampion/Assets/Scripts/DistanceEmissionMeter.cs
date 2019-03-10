@@ -71,7 +71,7 @@ namespace FineGameDesign.Utils
             return 0f;
         }
 
-        private void UpdateView()
+        public void UpdateView()
         {
             float fillAmount = m_Quantity / m_Capacity;
             m_MeterFill.fillAmount = fillAmount;
