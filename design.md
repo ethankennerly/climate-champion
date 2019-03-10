@@ -159,7 +159,7 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. Does grass to barren correlate to CO2 bar?
     1. Same color on CO2 fill as barren.
     1. Same color on CO2 background as grass.
-1. [ ] At end of path, couple's feet inside diamond of current ground tile.
+1. At end of path, couple's feet inside diamond of current ground tile.
 1. [ ] Read text at site.
     1. [ ] Outline white text on black.
 1. Align places to an isometric grid.
