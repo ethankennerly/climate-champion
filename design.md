@@ -95,14 +95,14 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Starts too stressful. Maybe start off pre-industrial?
     1. [ ] Bit chaotic.
     1. [ ] What is most optimal?
-        1. [ ] Why is there a duplicate government?
+        1. Why is there a duplicate government?
             1. Three islands, with land bridge.
             1. Remove downward CO2 traveler.
             1. Car commute on land.
             1. Airplane travel up right screen.
             1. Couple travels from left off screen to center of first island.
             1. Bed of next couple on right side.
-            1. [ ] Couple tweens to next place.
+            1. Couple tweens to next place.
             1. Next couple travel to next island.
                 1. [ ] If four children, travel from first to next island.
             1. First couple on first island.
@@ -111,9 +111,9 @@ Climate Champion simulate and animate choices. Choose. Review:
         1. Tween emission to meter.
             1. Tween emission to fill of meter.
         1. [ ] Couple travels from home to plot.
-            1. [ ] Hammer animates and radial meter appears.
+            1. Hammer animates and radial meter appears.
             1. [ ] When meter is full, couple brings product home.
-            1. [ ] Couple visits each plot:
+            1. Couple visits each plot:
                 1. [ ] Commute garage: money
                 1. [ ] Power plant: lightning
                 1. [ ] Shop: box
@@ -128,15 +128,14 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Children duplicated???
     1. [ ] Why are things duplicated at the end of the year?
     1. [ ] Why is there another cow?
+        1. [ ] Timer on children.
         1. [ ] Bed changes meters on 0, 1, or 2, home plots.
         1. [ ] Next couple has different character images.
         1. [ ] Hammer meter appears on all locations to be built.
-        1. [ ] Timer.
 1. [ ] I want to change and look at the rate of the bar change.
     1. [ ] Animate previous meter location fade.
 1. [ ] What is falling off the CO2 bar? What is the effect?
-    1. [ ] Nothing falls when CO2 meter empty.
-    1. [ ] Animate falling from fill amount.
+    1. Nothing falls when CO2 meter empty.
 1. [ ] Select. Want selection box to go away.
     1. [ ] Selecting does not dismiss the options.
 1. [ ] Tap away. Want next selection to appear. Have to touch twice.
