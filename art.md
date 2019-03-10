@@ -15,3 +15,5 @@ Artwork made by others have their own licenses.
 - <https://opengameart.org/content/2d-car-pack-0>
 - <https://en.wikipedia.org/wiki/File:BSicon_BICYCLE.svg>
 
+# TODO
+- Remove unused images.

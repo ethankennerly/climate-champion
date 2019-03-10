@@ -27,6 +27,12 @@
 
 # TODO
 
+- Emitter Path
+    - Traveler
+    - Timed Emitter Package
+    - Path
+        - Destination Object
+        - Emission
 - Pool carbon emission
 
 # Postmortem
