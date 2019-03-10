@@ -16,6 +16,11 @@ namespace FineGameDesign.Utils
         private bool m_OffsetWorld;
         [SerializeField]
         private float m_RateOverTime;
+        public float RateOverTime
+        {
+            get { return m_RateOverTime; }
+            set { m_RateOverTime = value; }
+        }
 
         [SerializeField]
         private float m_RemainingTime;

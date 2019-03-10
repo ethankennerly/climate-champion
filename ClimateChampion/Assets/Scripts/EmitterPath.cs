@@ -9,6 +9,7 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private TravelerView m_Traveler;
 
+        [Header("At site, traveler emits package; package emits content.")]
         [SerializeField]
         private TimedEmitter m_TimedEmitterPackage;
 
@@ -24,5 +25,7 @@ namespace FineGameDesign.Utils
         [Header("Emits package at each waypoint.")]
         [SerializeField]
         private Site[] m_Path;
+
+
     }
 }

@@ -53,27 +53,36 @@ namespace FineGameDesign.Utils
             transform.eulerAngles = new Vector3(0f, 0f, degrees);
         }
 
-        public static void SetDestination(GameObject travelerObject, Vector2 destination)
+        public static bool TrySetDestination(GameObject travelerObject, Transform destination)
+        {
+            if (destination == null)
+                return false;
+
+            SetDestination(travelerObject, destination.position);
+            return true;
+        }
+
+        /// <returns>
+        /// Estimated remaining time until arrival.
+        /// </returns>
+        public static float SetDestination(GameObject travelerObject, Vector2 destination)
         {
             TravelerView view = travelerObject.GetComponent<TravelerView>();
             if (view == null)
-                return;
+                return 0f;
 
             TravelerData traveler = view.Data;
             Vector2 offset = destination - traveler.position;
             float distance = offset.magnitude;
             if (distance == 0f)
-                return;
+                return 0f;
 
             if (traveler.speed <= 0f)
-                return;
+                return 0f;
 
-            float duration = 1f / traveler.speed;
-            float speed = distance / duration;
-            float rotation = Vector2Utils.AngleBetweenPoints(traveler.position, destination);
-
-            traveler.rotation = rotation;
-            traveler.speed = speed;
+            traveler.rotation = Vector2Utils.AngleBetweenPoints(traveler.position, destination);
+            float duration = distance / traveler.speed;
+            return duration;
         }
     }
 }

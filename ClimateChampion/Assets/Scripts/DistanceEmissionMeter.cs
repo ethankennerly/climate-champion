@@ -100,7 +100,12 @@ namespace FineGameDesign.Utils
                 return;
 
             Vector2 destination = m_Lerper == null ? transform.position : m_Lerper.transform.position;
-            TravelerView.SetDestination(emission.gameObject, destination);
+            float duration = TravelerView.SetDestination(emission.gameObject, destination);
+            TimedEmitter emitter = emission.GetComponent<TimedEmitter>();
+            if (emitter == null)
+                return;
+
+            emitter.RateOverTime = duration;
         }
     }
 }
