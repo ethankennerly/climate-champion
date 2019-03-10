@@ -146,19 +146,22 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Tap selected. No response.
         1. Tap another, immediately brings up that toggle.
         1. [ ] Tap elsewhere. Dismiss.
-1. [ ] What are "services?"
-    1. [ ] Is cheaper worse or better?
-    1. [ ] Don't have money?
-    1. [ ] Rename options to omit quantity:
+1. What are "services?"
+    1. Is cheaper worse or better?
+    1. Don't have money?
+    1. Rename options to omit quantity:
         - Shop A Lot
         - Shop Little
         - Entertain Frequently
         - Entertain Rarely
-1. [ ] I hear 2 sounds: pop and squish. I want feedback sound, good or bad.
-    1. [ ] Hear only pop portion of sound.
+1. I hear 2 sounds: pop and squish. I want feedback sound, good or bad.
+    1. Hear only pop portion of sound.
 1. Does grass to barren correlate to CO2 bar?
     1. Same color on CO2 fill as barren.
     1. Same color on CO2 background as grass.
+1. [ ] At end of path, couple's feet inside diamond of current ground tile.
+1. [ ] Read text at site.
+    1. [ ] Outline white text on black.
 1. Align places to an isometric grid.
 1. Reproduction.
     1. Have Three Or More Children: Doubles every place in 30 years.

@@ -191,7 +191,7 @@ PrefabInstance:
     - target: {fileID: 5938553914731257830, guid: b0541fa36565e4a4e842ebfaa36fc965,
         type: 3}
       propertyPath: m_Name
-      value: Buy New 20k Year
+      value: Shop A Lot
       objectReference: {fileID: 0}
     - target: {fileID: 8676108630088864599, guid: b0541fa36565e4a4e842ebfaa36fc965,
         type: 3}

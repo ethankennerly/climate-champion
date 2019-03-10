@@ -26,6 +26,8 @@ namespace FineGameDesign.Utils
 
         public void Open(PrefabToggleOpener spawnSite)
         {
+            Close();
+
             m_SpawnSite = spawnSite;
             PopulateToggles(spawnSite.OptionsToSpawn, spawnSite.SelectedIndex, m_Toggles);
             gameObject.SetActive(true);

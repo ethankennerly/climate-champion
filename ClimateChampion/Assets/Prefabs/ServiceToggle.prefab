@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2823079886144000202}
   m_Layer: 0
-  m_Name: ShopToggle
+  m_Name: ServiceToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +42,7 @@ PrefabInstance:
     - target: {fileID: 5938553914731257830, guid: 9402a1266c5778541b6454211b2763d7,
         type: 3}
       propertyPath: m_Name
-      value: Services $20k Year
+      value: Entertain Frequently
       objectReference: {fileID: 0}
     - target: {fileID: 8676108630088864599, guid: 9402a1266c5778541b6454211b2763d7,
         type: 3}
