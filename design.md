@@ -134,7 +134,7 @@ Climate Champion simulate and animate choices. Choose. Review:
         1. Four children.
             1. Two settle next island.
             1. The other two continue to next island.
-        1. [ ] Next couple has different character images.
+        1. Next couple has different character images.
 1. What is falling off the CO2 bar? What is the effect?
     1. Nothing falls when CO2 meter empty.
 1. [ ] Select. Want selection box to go away.
