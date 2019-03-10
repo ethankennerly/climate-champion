@@ -98,12 +98,15 @@ Climate Champion simulate and animate choices. Choose. Review:
         1. [ ] Why is there a duplicate government?
             1. Three islands, with land bridge.
             1. Remove downward CO2 traveler.
-            1. [ ] Car commute on land.
-            1. [ ] Couple travels from left off screen to center of first island.
+            1. Car commute on land.
+            1. Airplane travel up right screen.
+            1. Couple travels from left off screen to center of first island.
+            1. [ ] Couple tweens to next place.
+            1. Next couple travel to next island.
+                1. [ ] If four children, travel from first to next island.
             1. [ ] First couple on first island.
             1. [ ] Stations tween from the couple.
             1. [ ] Bed of next couple on right side.
-            1. [ ] Next couple travel to next island.
         1. [ ] Start meter fill in middle.
         1. [ ] Couple travels from home to plot.
             1. [ ] Hammer animates and radial meter appears.
@@ -151,7 +154,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Same image on CO2 background as grass.
 1. Align places to an isometric grid.
 1. Reproduction.
-    1. Have Three Or More Children: Doubles every station in 30 years.
+    1. Have Three Or More Children: Doubles every place in 30 years.
         1. Resets to default.
         1. After 80 years, toggler per capita disappears.
             1. Extract reproduction toggle to toggles per capita.
@@ -195,7 +198,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Services $20K
     1. [ ] Occupation in the town.
 1. [ ] Levels.
-    1. [ ] Introduce stations at levels.
+    1. [ ] Introduce places at levels.
 1. [ ] Lightbulbs
 1. [ ] Water Use
 1. [ ] Electronics
