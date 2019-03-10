@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1007395871602085231}
   - component: {fileID: 3418792703474889631}
   - component: {fileID: 501831556824624187}
+  - component: {fileID: 5204823140205049974}
   m_Layer: 0
   m_Name: CarbonDioxideEmission
   m_TagString: Untagged
@@ -72,6 +73,19 @@ MonoBehaviour:
   m_RemainingTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1
+--- !u!114 &5204823140205049974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986915887272957831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea814e30ec33c754287987aa5f3d5ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Type: 2
 --- !u!1 &8185328147311737148
 GameObject:
   m_ObjectHideFlags: 0

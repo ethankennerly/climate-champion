@@ -25,6 +25,7 @@
 - Traveler
 - Meter
     - Set Fill Position In World
+        - Interpolates position between begin position and end position by fill amount.
     - Subscribes to emission enabled on traveler.
         - Schedules traveler to arrive at fill position after a duration.
 - Pool carbon emission

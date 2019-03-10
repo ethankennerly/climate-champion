@@ -30,6 +30,7 @@ namespace FineGameDesign.Utils
         public Measurable[] m_Measurables;
 
         private Action<TravelerData, ItemType> m_Emit;
+        private Action<Emission> m_OnEmissionEnabled;
 
         private void OnEnable()
         {
@@ -38,11 +39,16 @@ namespace FineGameDesign.Utils
             m_Emit = Emit;
             DistanceEmissionSystem.OnEmitted -= m_Emit;
             DistanceEmissionSystem.OnEmitted += m_Emit;
+
+            m_OnEmissionEnabled = AttractEmission;
+            Emission.OnEnabled -= m_OnEmissionEnabled;
+            Emission.OnEnabled += m_OnEmissionEnabled;
         }
 
         private void OnDisable()
         {
             DistanceEmissionSystem.OnEmitted -= m_Emit;
+            Emission.OnEnabled -= m_OnEmissionEnabled;
         }
 
         private void Emit(TravelerData traveler, ItemType emissionType)
@@ -78,6 +84,16 @@ namespace FineGameDesign.Utils
 
             if (OnFillAmountUpdated != null)
                 OnFillAmountUpdated(fillAmount);
+        }
+
+        private void AttractEmission(Emission emission)
+        {
+            float change = GetChange(emission.Type);
+            if (change == 0f)
+                return;
+
+
+            TravelerView.SetDestination(emission.gameObject, transform.position);
         }
     }
 }

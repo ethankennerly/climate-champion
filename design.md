@@ -108,7 +108,8 @@ Climate Champion simulate and animate choices. Choose. Review:
             1. First couple on first island.
             1. [ ] Stations tween from the couple.
         1. Start meter fill in middle.
-        1. [ ] Tween emission to current fill of meter.
+        1. Tween emission to meter.
+            1. [ ] Tween emission to fill of meter.
         1. [ ] Couple travels from home to plot.
             1. [ ] Hammer animates and radial meter appears.
             1. [ ] When meter is full, couple brings product home.

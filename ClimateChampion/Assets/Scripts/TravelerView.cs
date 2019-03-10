@@ -9,6 +9,10 @@ namespace FineGameDesign.Utils
 
         [SerializeField]
         private TravelerData m_Data;
+        public TravelerData Data
+        {
+            get { return m_Data; }
+        }
 
         private Action<TravelerData> m_OnPositionChanged;
 
@@ -47,6 +51,29 @@ namespace FineGameDesign.Utils
         private void UpdateRotation(float degrees)
         {
             transform.eulerAngles = new Vector3(0f, 0f, degrees);
+        }
+
+        public static void SetDestination(GameObject travelerObject, Vector2 destination)
+        {
+            TravelerView view = travelerObject.GetComponent<TravelerView>();
+            if (view == null)
+                return;
+
+            TravelerData traveler = view.Data;
+            Vector2 offset = destination - traveler.position;
+            float distance = offset.magnitude;
+            if (distance == 0f)
+                return;
+
+            if (traveler.speed <= 0f)
+                return;
+
+            float duration = 1f / traveler.speed;
+            float speed = distance / duration;
+            float rotation = Vector2Utils.AngleBetweenPoints(traveler.position, destination);
+
+            traveler.rotation = rotation;
+            traveler.speed = speed;
         }
     }
 }
