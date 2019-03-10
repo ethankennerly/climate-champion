@@ -139,9 +139,12 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. Nothing falls when CO2 meter empty.
 1. Bicycle commute right side up.
 1. [ ] Select. Want selection box to go away.
-    1. [ ] Selecting does not dismiss the options.
+    1. [ ] Noted selecting does not dismiss the options.
+        1. [ ] Selecting closes the options.
 1. [ ] Tap away. Want next selection to appear. Have to touch twice.
     1. [ ] Tap selected. No response.
+        1. [ ] Tap another, immediately brings up that toggle.
+        1. [ ] Tap elsewhere. Dismiss.
 1. [ ] What are "services?"
     1. [ ] Is cheaper worse or better?
     1. [ ] Don't have money?

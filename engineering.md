@@ -11,6 +11,12 @@
 - Timed Emitter
     - Type
     - Rate Over Time
+- Emitter Path
+    - Traveler
+    - Timed Emitter Package
+    - Path
+        - Destination Object
+        - Emission
 - Prefab Toggle Opener
     - Open button
     - Spawned instance
@@ -27,12 +33,6 @@
 
 # TODO
 
-- Emitter Path
-    - Traveler
-    - Timed Emitter Package
-    - Path
-        - Destination Object
-        - Emission
 - Pool carbon emission
 
 # Postmortem

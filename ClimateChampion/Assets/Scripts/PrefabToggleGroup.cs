@@ -79,6 +79,8 @@ namespace FineGameDesign.Utils
 
                 m_SpawnSite.Spawn(index);
             }
+
+            Close();
         }
     }
 }

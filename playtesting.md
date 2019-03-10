@@ -37,7 +37,7 @@ Comments sorted by priority to encourage playing one more minute.
 1. [ ] Bit chaotic.
 1. [ ] Children duplicated???
 1. [ ] Is cheaper worse or better?
-1. [ ] Selecting does not dismiss the options.
+1. [ ] Noted selecting does not dismiss the options.
 1. [ ] Tap selected. No response.
 1. [ ] Don't have money?
 1. [ ] What does "services" mean?
