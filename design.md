@@ -95,6 +95,9 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Starts too stressful. Maybe start off pre-industrial?
     1. [ ] Bit chaotic.
     1. [ ] What is most optimal?
+        1. Children duplicated???
+        1. Why are things duplicated at the end of the year?
+        1. Why is there another cow?
         1. Why is there a duplicate government?
             1. Three islands, with land bridge.
             1. Remove downward CO2 traveler.
@@ -107,9 +110,11 @@ Climate Champion simulate and animate choices. Choose. Review:
                 1. [ ] If four children, travel from first to next island.
             1. First couple on first island.
             1. [ ] Stations tween from the couple.
-        1. Start meter fill in middle.
-        1. Tween emission to meter.
-            1. Tween emission to fill of meter.
+        1. I want to change and look at the rate of the bar change.
+            1. Start meter fill in middle.
+            1. Tween emission to meter.
+                1. Tween emission to fill of meter.
+            1. [ ] Animate previous meter location fade.
         1. [ ] Couple travels from home to plot.
             1. Hammer animates and radial meter appears.
             1. [ ] When meter is full, couple brings product home.
@@ -125,16 +130,12 @@ Climate Champion simulate and animate choices. Choose. Review:
         1. [ ] Airplane flies more frequently, shorter distance.
 1. [ ] Switch children. No effect. What does that change?
     1. [ ] Is two children and four children do something more?
-    1. [ ] Children duplicated???
-    1. [ ] Why are things duplicated at the end of the year?
-    1. [ ] Why is there another cow?
-        1. [ ] Timer on children.
-        1. [ ] Bed changes meters on 0, 1, or 2, home plots.
+        1. Timer on children.
+        1. Four children.
+            1. Two settle next island.
+            1. The other two continue to next island.
         1. [ ] Next couple has different character images.
-        1. [ ] Hammer meter appears on all locations to be built.
-1. [ ] I want to change and look at the rate of the bar change.
-    1. [ ] Animate previous meter location fade.
-1. [ ] What is falling off the CO2 bar? What is the effect?
+1. What is falling off the CO2 bar? What is the effect?
     1. Nothing falls when CO2 meter empty.
 1. [ ] Select. Want selection box to go away.
     1. [ ] Selecting does not dismiss the options.

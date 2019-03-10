@@ -495,6 +495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8676108630088864599}
   - component: {fileID: 5778285357903314810}
+  - component: {fileID: 4434611450535859880}
   m_Layer: 0
   m_Name: Have Four Children
   m_TagString: Untagged
@@ -542,8 +543,30 @@ MonoBehaviour:
   m_RateOverTime: 6
   m_AccumulatedTime: 0
   m_NumEmissions: 0
-  m_NumEmissionsToDestroyEmitter: 2
+  m_NumEmissionsToDestroyEmitter: 1
   m_FillImage: {fileID: 5773784245766944264}
+--- !u!114 &4434611450535859880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5938553914731257830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PrefabToSpawn: {fileID: 2303494335279534078, guid: 23bf3575792e4e14389b0c15649317d0,
+    type: 3}
+  m_RotationToSpawn: 0
+  m_OffsetPerSpawn: {x: 6, y: 0, z: -0.125}
+  m_OffsetWorld: 1
+  m_RateOverTime: 6
+  m_AccumulatedTime: 0
+  m_NumEmissions: 0
+  m_NumEmissionsToDestroyEmitter: 1
+  m_FillImage: {fileID: 0}
 --- !u!1 &6233557598342138775
 GameObject:
   m_ObjectHideFlags: 0

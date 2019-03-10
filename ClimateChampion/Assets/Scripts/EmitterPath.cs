@@ -64,7 +64,8 @@ namespace FineGameDesign.Utils
         {
             if (pathIndex >= m_Path.Length)
             {
-                Destroy(gameObject);
+                m_Traveler.Data.speed = 0f;
+                // Destroy(gameObject);
                 return;
             }
 
