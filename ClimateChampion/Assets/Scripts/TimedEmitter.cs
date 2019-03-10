@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace FineGameDesign.Utils
 {
@@ -29,6 +30,9 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private int m_NumEmissionsToDestroyEmitter;
 
+        [SerializeField]
+        private Image m_FillImage;
+
         private Action<float> m_OnDeltaTime;
 
         private void OnEnable()
@@ -48,6 +52,7 @@ namespace FineGameDesign.Utils
         private void UpdateEmission(float deltaTime)
         {
             m_RemainingTime += deltaTime;
+            UpdateFill();
             if (m_RateOverTime > m_RemainingTime)
                 return;
 
@@ -65,6 +70,18 @@ namespace FineGameDesign.Utils
             if (m_NumEmissionsToDestroyEmitter > 0 &&
                 m_NumEmissions >= m_NumEmissionsToDestroyEmitter)
                 Destroy(gameObject);
+        }
+
+        private void UpdateFill()
+        {
+            if (m_FillImage == null)
+                return;
+
+            float progress = m_RateOverTime == 0f ?
+                1f :
+                (m_RateOverTime - m_RemainingTime) / m_RateOverTime;
+            progress = Mathf.Clamp01(progress);
+            m_FillImage.fillAmount = progress;
         }
     }
 }
