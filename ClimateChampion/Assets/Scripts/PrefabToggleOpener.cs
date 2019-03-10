@@ -14,7 +14,7 @@ namespace FineGameDesign.Utils
         private TMP_Text m_SpawnedLabel;
 
         [SerializeField]
-        private GameObject m_SelectedCallout;
+        private GameObject[] m_OpenCallouts;
 
         [SerializeField]
         private GameObject[] m_OptionsToSpawn;
@@ -56,14 +56,18 @@ namespace FineGameDesign.Utils
                 return;
 
             Group.Open(this);
-            m_SelectedCallout.SetActive(true);
+            foreach (GameObject callout in m_OpenCallouts)
+                callout.SetActive(true);
+
             if (m_SpawnedInstance != null)
                 m_SpawnedLabel.text = m_SpawnedInstance.name;
         }
 
         public void Close()
         {
-            m_SelectedCallout.SetActive(false);
+            foreach (GameObject callout in m_OpenCallouts)
+                callout.SetActive(false);
+
             m_SpawnedLabel.text = "";
         }
 
