@@ -73,7 +73,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.96, y: 0.96}
+  m_Size: {x: 0.82, y: 0.82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -126,7 +126,10 @@ MonoBehaviour:
   m_PrefabToSpawn: {fileID: 7270876540637458153, guid: 48a1b6d53165e8c469c9a0adc7a15565,
     type: 3}
   m_RotationToSpawn: 180
+  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
+  m_OffsetWorld: 0
   m_RateOverTime: 6
-  m_RemainingTime: 0
+  m_AccumulatedTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 0
+  m_FillImage: {fileID: 0}
