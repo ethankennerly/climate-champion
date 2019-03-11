@@ -220,6 +220,7 @@ Climate Champion simulate and animate choices. Choose. Review:
     1. [ ] Services.
     1. [ ] Money to pay for the above.
 1. [ ] Gradually animate weather effect of CO2 concentration.
+1. [ ] Smooth edges to beach.
 1. [ ] Isometric grid of a town.
 1. [ ] Work produces money.
     1. [ ] Work also consumes resources like a house.
