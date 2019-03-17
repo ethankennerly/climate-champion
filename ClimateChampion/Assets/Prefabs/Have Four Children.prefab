@@ -540,10 +540,10 @@ MonoBehaviour:
   m_RotationToSpawn: 0
   m_OffsetPerSpawn: {x: 3, y: 0, z: -0.125}
   m_OffsetWorld: 1
-  m_RateOverTime: 6
+  m_RateOverTime: 15
   m_AccumulatedTime: 0
   m_NumEmissions: 0
-  m_NumEmissionsToDestroyEmitter: 1
+  m_NumEmissionsToDestroyEmitter: 0
   m_FillImage: {fileID: 5773784245766944264}
 --- !u!114 &4434611450535859880
 MonoBehaviour:
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_RotationToSpawn: 0
   m_OffsetPerSpawn: {x: 6, y: 0, z: -0.125}
   m_OffsetWorld: 1
-  m_RateOverTime: 6
+  m_RateOverTime: 15
   m_AccumulatedTime: 0
   m_NumEmissions: 0
   m_NumEmissionsToDestroyEmitter: 1

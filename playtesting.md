@@ -42,3 +42,11 @@ Comments sorted by priority to encourage playing one more minute.
 1. [ ] Don't have money?
 1. [ ] What does "services" mean?
 1. [ ] Who made the art? [art](art.md)
+
+# 2019-03-15
+
+## Mark Wegman
+
+1. [ ] Children spawned before attending to choice.
+1. [ ] Children spawned while looking at menu of number of children.
+1. [ ] Where are most emissions coming from?
