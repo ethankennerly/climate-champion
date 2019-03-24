@@ -6,6 +6,8 @@ namespace FineGameDesign.Utils
 {
     public sealed class TimedEmitter : MonoBehaviour
     {
+        public event Action<float> OnProgressChanged;
+
         [SerializeField]
         private GameObject m_PrefabToSpawn;
         public GameObject PrefabToSpawn
@@ -34,6 +36,12 @@ namespace FineGameDesign.Utils
         {
             get { return m_AccumulatedTime; }
             set { m_AccumulatedTime = value; }
+        }
+
+        private float m_Progress = -1f;
+        public float Progress
+        {
+            get { return m_Progress; }
         }
 
         [SerializeField]
@@ -88,11 +96,18 @@ namespace FineGameDesign.Utils
             if (m_FillImage == null)
                 return;
 
-            float progress = m_RateOverTime == 0f ?
+            float previousProgress = m_Progress;
+            m_Progress = m_RateOverTime == 0f ?
                 1f :
                 m_AccumulatedTime / m_RateOverTime;
-            progress = Mathf.Clamp01(progress);
-            m_FillImage.fillAmount = progress;
+            m_Progress = Mathf.Clamp01(m_Progress);
+            if (previousProgress == m_Progress)
+                return;
+
+            m_FillImage.fillAmount = m_Progress;
+            if (OnProgressChanged == null)
+                return;
+            OnProgressChanged(m_Progress);
         }
     }
 }

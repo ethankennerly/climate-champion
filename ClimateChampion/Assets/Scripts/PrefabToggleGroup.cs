@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +14,12 @@ namespace FineGameDesign.Utils
 
         [SerializeField]
         private PrefabToggle[] m_Toggles;
+
+        [SerializeField]
+        private Transform m_FillRoot;
+
+        [SerializeField]
+        private Image m_FillImage;
 
         private void Start()
         {
@@ -30,13 +37,17 @@ namespace FineGameDesign.Utils
 
             m_SpawnSite = spawnSite;
             PopulateToggles(spawnSite.OptionsToSpawn, spawnSite.SelectedIndex, m_Toggles);
+            AddProgressListener(spawnSite, m_Toggles);
             gameObject.SetActive(true);
         }
 
         public void Close()
         {
             if (m_SpawnSite != null)
+            {
+                RemoveProgressListener(m_SpawnSite, m_Toggles);
                 m_SpawnSite.Close();
+            }
             gameObject.SetActive(false);
         }
 
@@ -55,7 +66,8 @@ namespace FineGameDesign.Utils
                     continue;
                 }
                 toggle.Toggle.onValueChanged.RemoveListener(Spawn);
-                toggle.Toggle.isOn = index == selectedIndex;
+                bool isOn = index == selectedIndex;
+                toggle.Toggle.isOn = isOn;
                 toggle.Toggle.onValueChanged.AddListener(Spawn);
                 toggle.Label.text = optionToSpawn.name;
                 SpriteRenderer renderer = optionToSpawn.GetComponentInChildren<SpriteRenderer>();
@@ -63,6 +75,46 @@ namespace FineGameDesign.Utils
                 toggle.gameObject.SetActive(true);
                 index++;
             }
+        }
+
+        private Action<float> m_OnProgressChanged;
+
+        private void AddProgressListener(PrefabToggleOpener spawnSite, PrefabToggle[] prefabToggles)
+        {
+            TimedEmitter emitter = spawnSite.FindEmitter();
+            if (emitter == null)
+                return;
+
+            UpdateFill(emitter.Progress);
+
+            if (m_OnProgressChanged == null)
+                m_OnProgressChanged = UpdateFill;
+
+            emitter.OnProgressChanged -= m_OnProgressChanged;
+            emitter.OnProgressChanged += m_OnProgressChanged;
+
+            if (m_FillRoot == null)
+                return;
+
+            PrefabToggle selectedToggle = prefabToggles[spawnSite.SelectedIndex];
+            m_FillRoot.SetParent(selectedToggle.transform);
+        }
+
+        private void RemoveProgressListener(PrefabToggleOpener spawnSite, PrefabToggle[] prefabToggles)
+        {
+            TimedEmitter emitter = spawnSite.FindEmitter();
+            if (emitter == null)
+                return;
+
+            emitter.OnProgressChanged -= m_OnProgressChanged;
+        }
+
+        private void UpdateFill(float progress)
+        {
+            if (m_FillImage == null)
+                return;
+
+            m_FillImage.fillAmount = progress;
         }
 
         private void Spawn(bool selected)

@@ -50,3 +50,4 @@ Comments sorted by priority to encourage playing one more minute.
 1. [ ] Children spawned before attending to choice.
 1. [ ] Children spawned while looking at menu of number of children.
 1. [ ] Where are most emissions coming from?
+1. [ ] If I don't have children, will I make it to 2099?

@@ -71,6 +71,14 @@ namespace FineGameDesign.Utils
             m_SpawnedLabel.text = "";
         }
 
+        public TimedEmitter FindEmitter()
+        {
+            if (m_SpawnedInstance == null)
+                return null;
+
+            return m_SpawnedInstance.GetComponentInChildren<TimedEmitter>();
+        }
+
         public void Spawn(int index)
         {
             if (m_SelectedIndex == index)
@@ -81,7 +89,7 @@ namespace FineGameDesign.Utils
             TimedEmitter emitter;
             if (m_SpawnedInstance != null)
             {
-                emitter = m_SpawnedInstance.GetComponentInChildren<TimedEmitter>();
+                emitter = FindEmitter();
                 if (emitter != null)
                     accumulatedTime = emitter.AccumulatedTime;
 
@@ -99,7 +107,7 @@ namespace FineGameDesign.Utils
             m_SpawnedInstance.name = TrimIfEndsWith(m_SpawnedInstance.name, "(Clone)");
             if (m_SpawnedInstance != null)
                 m_SpawnedLabel.text = m_SpawnedInstance.name;
-            emitter = m_SpawnedInstance.GetComponentInChildren<TimedEmitter>();
+            emitter = FindEmitter();
             if (emitter != null)
                 emitter.AccumulatedTime = accumulatedTime;
         }
