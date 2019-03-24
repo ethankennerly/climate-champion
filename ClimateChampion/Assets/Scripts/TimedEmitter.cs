@@ -6,6 +6,7 @@ namespace FineGameDesign.Utils
 {
     public sealed class TimedEmitter : MonoBehaviour
     {
+        public static event Action<TimedEmitter, GameObject> OnEmitted;
         public static event Action<TimedEmitter> OnDestroyed;
         public event Action<float> OnProgressChanged;
 
@@ -79,13 +80,18 @@ namespace FineGameDesign.Utils
             m_AccumulatedTime -= m_RateOverTime;
             m_NumEmissions++;
 
+            GameObject clone = null;
+
             if (m_PrefabToSpawn != null)
             {
                 Quaternion spawnRotation = Quaternion.Euler(0f, 0f, m_RotationToSpawn);
                 Vector3 spawnPosition = m_OffsetWorld ? Vector3.zero : transform.position;
                 spawnPosition += m_OffsetPerSpawn * m_NumEmissions;
-                Instantiate(m_PrefabToSpawn, spawnPosition, spawnRotation);
+                clone = Instantiate(m_PrefabToSpawn, spawnPosition, spawnRotation);
             }
+
+            if (OnEmitted != null)
+                OnEmitted(this, clone);
 
             if (m_NumEmissionsToDestroyEmitter > 0 &&
                 m_NumEmissions >= m_NumEmissionsToDestroyEmitter)

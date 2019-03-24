@@ -110,14 +110,15 @@ Climate Champion simulate and animate choices. Choose. Review:
                 1. [ ] If four children, travel from first to next island.
             1. First couple on first island.
             1. [ ] Stations tween from the couple.
-        1. [ ] End screen: results
-            1. [ ] Average tons CO2e emitted per year.
+        1. [ ] End screen: Results
+            1. Average tons CO2e emitted per year.
+            1. [ ] Top 3 sources.
+                1. [ ] Sorted by rate.
+                1. [ ] Name of emission source.
+                1. [ ] Amount of emission source.
+                1. [ ] Image of emission source.
             1. [ ] Stacked column fill.
             1. [ ] Height of stack equal to emissions.
-            1. [ ] Name of emission source.
-            1. [ ] Top 3 sources, then other.
-            1. [ ] Amount of emission.
-            1. [ ] Image of emission source.
             1. [ ] Comparison to global average: 5 tons CO2e/year/person.
         1. I want to change and look at the rate of the bar change.
             1. Start meter fill in middle.
@@ -140,11 +141,12 @@ Climate Champion simulate and animate choices. Choose. Review:
 1. Switch children. No effect. What does that change?
     1. Is two children and four children do something more?
         1. Timer on children.
-            1. [ ] When toggle menu is open, timer also on the active option.
+            1. When toggle menu is open, timer also on the active option.
         1. Four children.
             1. Two settle next island.
             1. The other two continue to next island.
         1. Next couple has different character images.
+        1. Close toggle group on emitter destroyed.
 1. What is falling off the CO2 bar? What is the effect?
     1. Nothing falls when CO2 meter empty.
 1. Bicycle commute right side up.

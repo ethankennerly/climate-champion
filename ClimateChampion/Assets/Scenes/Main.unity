@@ -286,6 +286,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 894341150}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1497876739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6626524708174102183, guid: d5f7200f9337a664c9e28acb83f495a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1538032523298115975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1497876740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497876739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596763411d6775d4d90e855b054e6992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AverageRateOfEmissionsText: {fileID: 5037536872832507715}
+  m_CloneNamePrefix: CarbonDioxideEmission
+  m_EmitterNamePrefix: 
+  m_MinDuration: 1
 --- !u!1001 &1541463258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1682,6 +1704,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40a1e1b75ed05d747bada656668e81f8, type: 3}
+--- !u!114 &5037536872832507715 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6527011034722670936, guid: 40a1e1b75ed05d747bada656668e81f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5037536872832507714}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5908870424576446233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1855,7 +1889,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1538032523298115975}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1497876739}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2d257fd69ff92e49b80980acc506c24, type: 3}
