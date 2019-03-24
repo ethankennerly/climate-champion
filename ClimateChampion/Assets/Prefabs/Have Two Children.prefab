@@ -308,7 +308,7 @@ MonoBehaviour:
   m_PrefabToSpawn: {fileID: 2303494335279534078, guid: 38fa4b01047dccc40bbde1109fb68d8e,
     type: 3}
   m_RotationToSpawn: 0
-  m_OffsetPerSpawn: {x: 3, y: 0, z: -0.125}
+  m_OffsetPerSpawn: {x: 5, y: -1.25, z: -0.125}
   m_OffsetWorld: 0
   m_RateOverTime: 15
   m_AccumulatedTime: 0

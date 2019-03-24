@@ -52,6 +52,9 @@ namespace FineGameDesign.Utils
 
         public void Open()
         {
+            if (m_SpawnedInstance == null)
+                return;
+
             if (Group == null)
                 return;
 
