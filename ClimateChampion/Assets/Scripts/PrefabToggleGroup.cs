@@ -15,12 +15,6 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private PrefabToggle[] m_Toggles;
 
-        [SerializeField]
-        private Transform m_FillRoot;
-
-        [SerializeField]
-        private Image m_FillImage;
-
         private void Start()
         {
             Close();
@@ -45,7 +39,7 @@ namespace FineGameDesign.Utils
         {
             if (m_SpawnSite != null)
             {
-                RemoveProgressListener(m_SpawnSite, m_Toggles);
+                RemoveProgressListener(m_SpawnSite);
                 m_SpawnSite.Close();
             }
             gameObject.SetActive(false);
@@ -77,6 +71,34 @@ namespace FineGameDesign.Utils
             }
         }
 
+        private void Spawn(bool selected)
+        {
+            if (!selected)
+                return;
+
+            for (int index = 0, numToggles = m_Toggles.Length; index < numToggles; ++index)
+            {
+                PrefabToggle toggle = m_Toggles[index];
+                if (!toggle.gameObject.activeSelf)
+                    continue;
+
+                if (!toggle.Toggle.isOn)
+                    continue;
+
+                m_SpawnSite.Spawn(index);
+            }
+
+            Close();
+        }
+
+        #region Progress
+
+        [SerializeField]
+        private Transform m_FillRoot;
+
+        [SerializeField]
+        private Image m_FillImage;
+
         private Action<float> m_OnProgressChanged;
 
         private void AddProgressListener(PrefabToggleOpener spawnSite, PrefabToggle[] prefabToggles)
@@ -97,10 +119,10 @@ namespace FineGameDesign.Utils
                 return;
 
             PrefabToggle selectedToggle = prefabToggles[spawnSite.SelectedIndex];
-            m_FillRoot.SetParent(selectedToggle.transform);
+            m_FillRoot.SetParent(selectedToggle.transform, false);
         }
 
-        private void RemoveProgressListener(PrefabToggleOpener spawnSite, PrefabToggle[] prefabToggles)
+        private void RemoveProgressListener(PrefabToggleOpener spawnSite)
         {
             TimedEmitter emitter = spawnSite.FindEmitter();
             if (emitter == null)
@@ -117,24 +139,6 @@ namespace FineGameDesign.Utils
             m_FillImage.fillAmount = progress;
         }
 
-        private void Spawn(bool selected)
-        {
-            if (!selected)
-                return;
-
-            for (int index = 0, numToggles = m_Toggles.Length; index < numToggles; ++index)
-            {
-                PrefabToggle toggle = m_Toggles[index];
-                if (!toggle.gameObject.activeSelf)
-                    continue;
-
-                if (!toggle.Toggle.isOn)
-                    continue;
-
-                m_SpawnSite.Spawn(index);
-            }
-
-            Close();
-        }
+        #endregion Progress
     }
 }

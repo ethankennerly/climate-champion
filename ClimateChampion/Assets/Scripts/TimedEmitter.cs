@@ -71,7 +71,7 @@ namespace FineGameDesign.Utils
         private void UpdateEmission(float deltaTime)
         {
             m_AccumulatedTime += deltaTime;
-            UpdateFill();
+            UpdateProgress();
             if (m_RateOverTime > m_AccumulatedTime)
                 return;
 
@@ -91,11 +91,8 @@ namespace FineGameDesign.Utils
                 Destroy(gameObject);
         }
 
-        private void UpdateFill()
+        private void UpdateProgress()
         {
-            if (m_FillImage == null)
-                return;
-
             float previousProgress = m_Progress;
             m_Progress = m_RateOverTime == 0f ?
                 1f :
@@ -104,10 +101,19 @@ namespace FineGameDesign.Utils
             if (previousProgress == m_Progress)
                 return;
 
-            m_FillImage.fillAmount = m_Progress;
+            UpdateFill();
+
             if (OnProgressChanged == null)
                 return;
             OnProgressChanged(m_Progress);
+        }
+
+        private void UpdateFill()
+        {
+            if (m_FillImage == null)
+                return;
+
+            m_FillImage.fillAmount = m_Progress;
         }
     }
 }
