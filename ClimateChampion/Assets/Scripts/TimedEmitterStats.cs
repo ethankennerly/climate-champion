@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System;
+using System.Text;
 using UnityEngine;
 using TMPro;
 
@@ -13,13 +14,30 @@ namespace FineGameDesign.Utils
         [SerializeField]
         private TMP_Text m_RatePerTopEmitterNameText;
 
-        private class NamedCount
+        [Header("Calibrates for delayed start of emissions.")]
+        [SerializeField]
+        private float m_RateMultiplier = 3f;
+
+        private class NamedCount : IComparer<NamedCount>
         {
             public int count;
             public string name;
+
+            int IComparer<NamedCount>.Compare(NamedCount a, NamedCount b)
+            {
+                if (a.count > b.count)
+                    return -1;
+
+                if (a.count < b.count)
+                    return 1;
+
+                return string.Compare(a.name, b.name);
+            }
         }
 
-        private readonly List<NamedCount> m_RatePerTopEmitterNames = new List<NamedCount>();
+        private readonly NamedCount m_NamedCountComparer = new NamedCount();
+
+        private readonly List<NamedCount> m_CountPerTopEmitterNames = new List<NamedCount>();
 
         [SerializeField]
         private int m_NumTopEmitters = 3;
@@ -75,14 +93,15 @@ namespace FineGameDesign.Utils
 
         private void IncrementNumEmissions(TimedEmitter emitter, GameObject clone)
         {
-            if (!StartsWith(clone.name, m_CloneNamePrefix))
+            if (!StartsWith(clone == null ? null : clone.name, m_CloneNamePrefix))
                 return;
 
             if (!StartsWith(emitter.StatsCategory, m_EmitterCategoryPrefix))
                 return;
 
             m_NumEmissions++;
-            AddAmount(m_RatePerTopEmitterNames, emitter.name, 1);
+            string emitterName = TrimSuffix(emitter.name, "(Clone)");
+            AddAmount(m_CountPerTopEmitterNames, emitterName, 1);
 
             UpdateAverageRateOfEmissions();
         }
@@ -100,6 +119,8 @@ namespace FineGameDesign.Utils
                 m_MinDuration :
                 m_Duration;
 
+            duration /= m_RateMultiplier;
+
             m_AverageRateOfEmissions = (float)m_NumEmissions / duration;
             if (m_AverageRateOfEmissionsText != null)
             {
@@ -109,6 +130,10 @@ namespace FineGameDesign.Utils
 
             if (m_RatePerTopEmitterNameText != null)
             {
+                m_CountPerTopEmitterNames.Sort(m_NamedCountComparer);
+
+                m_RatePerTopEmitterNameText.text = FormatFirstRates(m_CountPerTopEmitterNames,
+                    m_NumTopEmitters, duration);
             }
         }
 
@@ -122,6 +147,21 @@ namespace FineGameDesign.Utils
                 return false;
 
             return text.StartsWith(prefix, StringComparison.Ordinal);
+        }
+
+        private static string TrimSuffix(string text, string suffix)
+        {
+            bool emptySuffix = string.IsNullOrEmpty(suffix);
+            if (emptySuffix)
+                return text;
+
+            if (string.IsNullOrEmpty(text))
+                return text;
+
+            if (!text.EndsWith(suffix, StringComparison.Ordinal))
+                return text;
+
+            return text.Substring(0, text.Length - suffix.Length);
         }
 
         private static void AddAmount(List<NamedCount> namedCounts, string name, int amount)
@@ -139,6 +179,28 @@ namespace FineGameDesign.Utils
                 count = amount,
                 name = name
             });
+        }
+
+        private static string FormatFirstRates(List<NamedCount> countPerTopEmitterNames,
+            int numTopEmitters, float duration)
+        {
+            var builder = new StringBuilder();
+            int numEmitters = countPerTopEmitterNames.Count;
+            if (numEmitters > numTopEmitters)
+                numEmitters = numTopEmitters;
+
+            for (int emitterIndex = 0; emitterIndex < numEmitters; ++emitterIndex)
+            {
+                NamedCount namedCount = countPerTopEmitterNames[emitterIndex];
+                builder.Append(namedCount.name);
+                builder.Append(": ");
+                float rate = (float)namedCount.count / duration;
+                string rateDecimalText = rate.ToString("N1");
+                builder.Append(rateDecimalText);
+                builder.Append('\n');
+            }
+
+            return builder.ToString();
         }
     }
 }

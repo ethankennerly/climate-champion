@@ -18,6 +18,9 @@ namespace FineGameDesign.Utils
         private GameObject m_EndGameRoot;
 
         [SerializeField]
+        private GameObject m_WinOrEndGameRoot;
+
+        [SerializeField]
         private GameObject m_ActiveDuringPlay;
 
         [SerializeField]
@@ -53,6 +56,7 @@ namespace FineGameDesign.Utils
             m_DeltaTime.enabled = false;
             m_ActiveDuringPlay.SetActive(false);
             m_EndGameRoot.SetActive(true);
+            m_WinOrEndGameRoot.SetActive(true);
         }
 
         private void WinGameIfTimeUp(TimerData timer)
@@ -63,6 +67,7 @@ namespace FineGameDesign.Utils
             m_DeltaTime.enabled = false;
             m_ActiveDuringPlay.SetActive(false);
             m_WinGameRoot.SetActive(true);
+            m_WinOrEndGameRoot.SetActive(true);
         }
     }
 }

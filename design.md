@@ -110,16 +110,17 @@ Climate Champion simulate and animate choices. Choose. Review:
                 1. [ ] If four children, travel from first to next island.
             1. First couple on first island.
             1. [ ] Stations tween from the couple.
-        1. [ ] End screen: Results
+        1. End screen: Results
             1. Average tons CO2e emitted per year.
-            1. [ ] Top 3 sources.
-                1. [ ] Sorted by rate.
-                1. [ ] Name of emission source.
-                1. [ ] Amount of emission source.
+            1. Top 3 sources.
+                1. Sorted by rate.
+                1. Name of emission source.
+                1. Rate of emission source.
                 1. [ ] Image of emission source.
             1. [ ] Stacked column fill.
             1. [ ] Height of stack equal to emissions.
             1. [ ] Comparison to global average: 5 tons CO2e/year/person.
+            1. [ ] Foot icon filled in.
         1. I want to change and look at the rate of the bar change.
             1. Start meter fill in middle.
             1. Tween emission to meter.
