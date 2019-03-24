@@ -6,6 +6,7 @@ namespace FineGameDesign.Utils
 {
     public sealed class TimedEmitter : MonoBehaviour
     {
+        public static event Action<TimedEmitter> OnDestroyed;
         public event Action<float> OnProgressChanged;
 
         [SerializeField]
@@ -88,7 +89,11 @@ namespace FineGameDesign.Utils
 
             if (m_NumEmissionsToDestroyEmitter > 0 &&
                 m_NumEmissions >= m_NumEmissionsToDestroyEmitter)
+            {
+                if (OnDestroyed != null)
+                    OnDestroyed(this);
                 Destroy(gameObject);
+            }
         }
 
         private void UpdateProgress()

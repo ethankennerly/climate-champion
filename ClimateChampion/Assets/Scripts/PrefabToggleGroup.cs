@@ -32,6 +32,7 @@ namespace FineGameDesign.Utils
             m_SpawnSite = spawnSite;
             PopulateToggles(spawnSite.OptionsToSpawn, spawnSite.SelectedIndex, m_Toggles);
             AddProgressListener(spawnSite, m_Toggles);
+            AddEmitterDestroyedListener(spawnSite);
             gameObject.SetActive(true);
         }
 
@@ -40,6 +41,7 @@ namespace FineGameDesign.Utils
             if (m_SpawnSite != null)
             {
                 RemoveProgressListener(m_SpawnSite);
+                RemoveEmitterDestroyedListener(m_SpawnSite);
                 m_SpawnSite.Close();
             }
             gameObject.SetActive(false);
@@ -91,7 +93,7 @@ namespace FineGameDesign.Utils
             Close();
         }
 
-        #region Progress
+        #region UpdateFillOnProgressChanged
 
         [SerializeField]
         private Transform m_FillRoot;
@@ -139,6 +141,55 @@ namespace FineGameDesign.Utils
             m_FillImage.fillAmount = progress;
         }
 
-        #endregion Progress
+        #endregion UpdateFillOnProgressChanged
+
+        #region CloseOnEmitterDestroyed
+
+        private Action<TimedEmitter> m_OnEmitterDestroyed;
+
+        private void AddEmitterDestroyedListener(PrefabToggleOpener spawnSite)
+        {
+            TimedEmitter emitter = spawnSite.FindEmitter();
+            if (emitter == null)
+            {
+                Close();
+                return;
+            }
+
+            if (m_OnEmitterDestroyed == null)
+                m_OnEmitterDestroyed = CloseIfEmitterNamesAreEqual;
+
+            TimedEmitter.OnDestroyed -= m_OnEmitterDestroyed;
+            TimedEmitter.OnDestroyed += m_OnEmitterDestroyed;
+        }
+
+        private void RemoveEmitterDestroyedListener(PrefabToggleOpener spawnSite)
+        {
+            TimedEmitter emitter = spawnSite.FindEmitter();
+            if (emitter == null)
+                return;
+
+            TimedEmitter.OnDestroyed -= m_OnEmitterDestroyed;
+        }
+
+        /// <summary>
+        /// Strangely, the emitters appear equal but are different.
+        /// </summary>
+        private void CloseIfEmitterNamesAreEqual(TimedEmitter otherEmitter)
+        {
+            if (m_SpawnSite == null)
+                return;
+
+            TimedEmitter emitter = m_SpawnSite.FindEmitter();
+            if (emitter == null)
+                return;
+
+            if (emitter.name != otherEmitter.name)
+                return;
+
+            Close();
+        }
+
+        #endregion CloseOnEmitterDestroyed
     }
 }
