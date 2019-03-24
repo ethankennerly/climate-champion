@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 7367758315309337203}
   - component: {fileID: 1151775491921859904}
   - component: {fileID: 5924818741395541744}
+  - component: {fileID: 6004222137564172147}
   m_Layer: 0
   m_Name: Airplane Vacation Trip
   m_TagString: Untagged
@@ -129,6 +130,8 @@ MonoBehaviour:
     speed: 5
     position: {x: 2, y: 1}
     deltaDistance: 0
+    hasDestination: 0
+    destination: {x: 0, y: 0}
 --- !u!114 &5924818741395541744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +139,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5490390011349796546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9630b47ce0421947ba00420f7c10a95, type: 3}
   m_Name: 
@@ -147,3 +150,26 @@ MonoBehaviour:
     remainingDistance: 0
     numEmissions: 0
     numEmissionsToDestroyEmitter: 20
+--- !u!114 &6004222137564172147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5490390011349796546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37b2eb3e211c034ebccfcda320993d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PrefabToSpawn: {fileID: 986915887272957831, guid: 0769c6bff573fd44e9aa1e6ed46085eb,
+    type: 3}
+  m_RotationToSpawn: 0
+  m_OffsetPerSpawn: {x: 0, y: 0, z: 0}
+  m_OffsetWorld: 0
+  m_RateOverTime: 0.05
+  m_AccumulatedTime: 0
+  m_StatsCategory: Transportation
+  m_NumEmissions: 0
+  m_NumEmissionsToDestroyEmitter: 20
+  m_FillImage: {fileID: 0}

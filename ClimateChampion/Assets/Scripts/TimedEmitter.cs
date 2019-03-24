@@ -47,6 +47,13 @@ namespace FineGameDesign.Utils
         }
 
         [SerializeField]
+        private string m_StatsCategory;
+        public string StatsCategory
+        {
+            get { return m_StatsCategory; }
+        }
+
+        [SerializeField]
         private int m_NumEmissions;
         [SerializeField]
         private int m_NumEmissionsToDestroyEmitter;

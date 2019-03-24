@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System;
 using UnityEngine;
 using TMPro;
@@ -10,9 +11,24 @@ namespace FineGameDesign.Utils
         private TMP_Text m_AverageRateOfEmissionsText;
 
         [SerializeField]
-        private string m_CloneNamePrefix = "CarbonDioxideEmission";
+        private TMP_Text m_RatePerTopEmitterNameText;
+
+        private class NamedCount
+        {
+            public int count;
+            public string name;
+        }
+
+        private readonly List<NamedCount> m_RatePerTopEmitterNames = new List<NamedCount>();
+
         [SerializeField]
-        private string m_EmitterNamePrefix = "";
+        private int m_NumTopEmitters = 3;
+
+        [SerializeField]
+        private string m_CloneNamePrefix = "CarbonDioxideEmission";
+
+        [SerializeField]
+        private string m_EmitterCategoryPrefix = "";
 
         [SerializeField]
         private float m_MinDuration = 1.0f;
@@ -62,10 +78,11 @@ namespace FineGameDesign.Utils
             if (!StartsWith(clone.name, m_CloneNamePrefix))
                 return;
 
-            if (!StartsWith(emitter.name, m_EmitterNamePrefix))
+            if (!StartsWith(emitter.StatsCategory, m_EmitterCategoryPrefix))
                 return;
 
             m_NumEmissions++;
+            AddAmount(m_RatePerTopEmitterNames, emitter.name, 1);
 
             UpdateAverageRateOfEmissions();
         }
@@ -89,6 +106,10 @@ namespace FineGameDesign.Utils
                 int wholeRate = (int)Mathf.Round(m_AverageRateOfEmissions);
                 m_AverageRateOfEmissionsText.text = wholeRate.ToString();
             }
+
+            if (m_RatePerTopEmitterNameText != null)
+            {
+            }
         }
 
         private static bool StartsWith(string text, string prefix)
@@ -101,6 +122,23 @@ namespace FineGameDesign.Utils
                 return false;
 
             return text.StartsWith(prefix, StringComparison.Ordinal);
+        }
+
+        private static void AddAmount(List<NamedCount> namedCounts, string name, int amount)
+        {
+            foreach (NamedCount namedCount in namedCounts)
+            {
+                if (name != namedCount.name)
+                    continue;
+                namedCount.count += amount;
+                return;
+            }
+
+            namedCounts.Add(new NamedCount()
+            {
+                count = amount,
+                name = name
+            });
         }
     }
 }
