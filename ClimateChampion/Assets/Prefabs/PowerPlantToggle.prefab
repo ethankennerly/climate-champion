@@ -119,7 +119,7 @@ PrefabInstance:
     - target: {fileID: 6578383981121792732, guid: 3511e6acb51d16b42bafa026e1953aa7,
         type: 3}
       propertyPath: m_OptionsToSpawn.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6578383981121792732, guid: 3511e6acb51d16b42bafa026e1953aa7,
         type: 3}
@@ -140,6 +140,12 @@ PrefabInstance:
     - target: {fileID: 6578383981121792732, guid: 3511e6acb51d16b42bafa026e1953aa7,
         type: 3}
       propertyPath: m_OptionsToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 8235042759428796883, guid: 32a0814cc053843499b915e80dd19223,
+        type: 3}
+    - target: {fileID: 6578383981121792732, guid: 3511e6acb51d16b42bafa026e1953aa7,
+        type: 3}
+      propertyPath: m_OptionsToSpawn.Array.data[2]
       value: 
       objectReference: {fileID: 8235042759428796883, guid: f02384b5b5ac0a943bf048d4c5088df9,
         type: 3}

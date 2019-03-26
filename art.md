@@ -14,6 +14,7 @@ Artwork made by others have their own licenses.
 - <https://github.com/ethankennerly/powerplant>
 - <https://opengameart.org/content/2d-car-pack-0>
 - <https://en.wikipedia.org/wiki/File:BSicon_BICYCLE.svg>
+- <http://pixelartmaker.com/art/7080cddba364ebc>
 
 # TODO
 - Remove unused images.
